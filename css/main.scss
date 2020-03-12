@@ -3,11 +3,12 @@
 $desktopWidth: 768px;
 $baseMargin: 10px;
 
-$translucentTeal: rgba(37, 176, 172, 0.48);
+$teal: #52BCB9;//25b0ac;
+$translucentTeal: rgba($teal, 0.48); //#25b0ac
 $blushPink: #F4B582;
 $melon: #FFD344;
 $gray: #707070;
-$translucentGray: rgba(112, 112, 112, 0.14);
+$translucentGray: rgba($gray, 0.14);
 
 .hidden {
 	display: none;
@@ -22,6 +23,20 @@ body {
 p { 
     margin-top: $baseMargin;
     margin-bottom: $baseMargin * 2;
+
+    // mobile styles
+    font-size: 4.5vw;
+}
+
+h1, h3 { 
+    color: $teal;
+    margin-top: $baseMargin * 4;
+    // font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    font-size: 9.5vw;
 }
 
 .container {
@@ -38,100 +53,101 @@ header {
     }
 }
 
-// hero section 
-#heroText {
-    text-align: center;
-}
-
 // hero section - circles
-.circle {
-    border-radius: 50%;
+#heroCircles {
+    #heroText {
+        text-align: center;
+    }
     
-    display: flex;
-    align-items: center;
-}
-
-.overlay {
-    position: absolute;
-}
-
-$mblMainCircleDim: 70vw;
-
-.topRight {
-    background-color: $melon;
-
-    // mobile styles
-    margin-left: $mblMainCircleDim - $mblMainCircleDim * 0.15 * 1.15;
-    margin-top: - $mblMainCircleDim;
-    width: $mblMainCircleDim * 0.25;
-    height: $mblMainCircleDim * 0.25;
-}
-
-.bottomLeft {
-    background-color: $translucentTeal;
+    .circle {
+        border-radius: 50%;
+        
+        display: flex;
+        align-items: center;
+    }
     
-    // mobile styles
-    margin-top: - $mblMainCircleDim * 0.25;
-    width: $mblMainCircleDim * 0.25;
-    height: $mblMainCircleDim * 0.25;
-}
-
-.backLayer {
-    background-color: $translucentTeal;
-    z-index: -1;
+    .overlay {
+        position: absolute;
+    }
     
-    // mobile styles
-    margin-top: - $mblMainCircleDim;
-    margin-left: $mblMainCircleDim * 0.1;
-    width: $mblMainCircleDim * 0.15;
-    height: $mblMainCircleDim * 0.15;
-}
-
-.small {
-    // mobile styles
-    width: $mblMainCircleDim * 0.09;
-    height: $mblMainCircleDim * 0.09;
-}
-
-.topLeft {
-    background-color: $melon;
-
-    // mobile styles
-    margin-top: - $mblMainCircleDim * 0.95;
-    margin-left: -$baseMargin;
-}   
-
-.bottomRight {
-    background-color: $translucentTeal;
-
-    // mobile styles
-    margin-top: - $mblMainCircleDim * (0.25 / 1.5);
-    margin-left: $mblMainCircleDim;
-}   
-
-.middleRight {
-    background-color: $melon;
+    $mblMainCircleDim: 70vw;
     
-    // mobile styles
-    margin-left: $mblMainCircleDim * 1.23;
-    margin-top: - $mblMainCircleDim * 0.63;
-}
-
-.mainCircle {
-    background-color: $blushPink;    
-    padding-left: $baseMargin * 3;
-    color: white;
-
-    box-shadow: 2px 2px 5px 1px $translucentGray;
-
-    // mobile styles
-    width: $mblMainCircleDim;    
-    height: $mblMainCircleDim;
-    font-size: 7.25vw;
+    .topRight {
+        background-color: $melon;
+    
+        // mobile styles
+        margin-left: $mblMainCircleDim - $mblMainCircleDim * 0.15 * 1.15;
+        margin-top: - $mblMainCircleDim;
+        width: $mblMainCircleDim * 0.25;
+        height: $mblMainCircleDim * 0.25;
+    }
+    
+    .bottomLeft {
+        background-color: $translucentTeal;
+        
+        // mobile styles
+        margin-top: - $mblMainCircleDim * 0.25;
+        width: $mblMainCircleDim * 0.25;
+        height: $mblMainCircleDim * 0.25;
+    }
+    
+    .backLayer {
+        background-color: $translucentTeal;
+        z-index: -1;
+        
+        // mobile styles
+        margin-top: - $mblMainCircleDim;
+        margin-left: $mblMainCircleDim * 0.1;
+        width: $mblMainCircleDim * 0.15;
+        height: $mblMainCircleDim * 0.15;
+    }
+    
+    .small {
+        // mobile styles
+        width: $mblMainCircleDim * 0.09;
+        height: $mblMainCircleDim * 0.09;
+    }
+    
+    .topLeft {
+        background-color: $melon;
+    
+        // mobile styles
+        margin-top: - $mblMainCircleDim * 0.95;
+        margin-left: -$baseMargin;
+    }   
+    
+    .bottomRight {
+        background-color: $translucentTeal;
+    
+        // mobile styles
+        margin-top: - $mblMainCircleDim * (0.25 / 1.5);
+        margin-left: $mblMainCircleDim;
+    }   
+    
+    .middleRight {
+        background-color: $melon;
+        
+        // mobile styles
+        margin-left: $mblMainCircleDim * 1.23;
+        margin-top: - $mblMainCircleDim * 0.63;
+    }
+    
+    .mainCircle {
+        background-color: $blushPink;    
+        padding-left: $baseMargin * 3;
+        color: white;
+    
+        box-shadow: 2px 2px 5px 1px $translucentGray;
+    
+        // mobile styles
+        width: $mblMainCircleDim;    
+        height: $mblMainCircleDim;
+        font-size: 7.25vw;
+    }
 }
 
 .ctaButton {
-    border-radius: $baseMargin * 3;
+    border-radius: $baseMargin * 5;
     padding: $baseMargin;
     padding-left: $baseMargin * 2;
     padding-right: $baseMargin * 2;
@@ -143,6 +159,29 @@ $mblMainCircleDim: 70vw;
     background: linear-gradient(90deg, rgba(37,176,172,0.66) 0%, rgba(67,232,227,0.48) 100%); 
 
     margin-top: $baseMargin * 2;
+}
+
+// tech stack 
+#techStackGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: center;
+
+    // mobile styles
+    img {
+        height: 80px;
+        // width: 100px;
+    }
+    
+    .adjustHeight {
+        height: 70px;
+    }
+
+    .adjustWidth {
+        width: 150px;
+        height: auto;
+        margin-left: $baseMargin * -4.5;
+    }
 }
 
 // desktop

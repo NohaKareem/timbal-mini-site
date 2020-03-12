@@ -11,6 +11,17 @@ body {
 p {
   margin-top: 10px;
   margin-bottom: 20px;
+  font-size: 4.5vw;
+}
+
+h1, h3 {
+  color: #52BCB9;
+  margin-top: 40px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 9.5vw;
 }
 
 .container {
@@ -26,68 +37,58 @@ header nav a {
   display: hidden;
 }
 
-#heroText {
+#heroCircles #heroText {
   text-align: center;
 }
-
-.circle {
+#heroCircles .circle {
   border-radius: 50%;
   display: flex;
   align-items: center;
 }
-
-.overlay {
+#heroCircles .overlay {
   position: absolute;
 }
-
-.topRight {
+#heroCircles .topRight {
   background-color: #FFD344;
   margin-left: 57.925vw;
   margin-top: -70vw;
   width: 17.5vw;
   height: 17.5vw;
 }
-
-.bottomLeft {
-  background-color: rgba(37, 176, 172, 0.48);
+#heroCircles .bottomLeft {
+  background-color: rgba(82, 188, 185, 0.48);
   margin-top: -17.5vw;
   width: 17.5vw;
   height: 17.5vw;
 }
-
-.backLayer {
-  background-color: rgba(37, 176, 172, 0.48);
+#heroCircles .backLayer {
+  background-color: rgba(82, 188, 185, 0.48);
   z-index: -1;
   margin-top: -70vw;
   margin-left: 7vw;
   width: 10.5vw;
   height: 10.5vw;
 }
-
-.small {
+#heroCircles .small {
   width: 6.3vw;
   height: 6.3vw;
 }
-
-.topLeft {
+#heroCircles .topLeft {
   background-color: #FFD344;
   margin-top: -66.5vw;
   margin-left: -10px;
 }
-
-.bottomRight {
-  background-color: rgba(37, 176, 172, 0.48);
+#heroCircles .bottomRight {
+  background-color: rgba(82, 188, 185, 0.48);
   margin-top: -11.6666666667vw;
   margin-left: 70vw;
 }
-
-.middleRight {
+#heroCircles .middleRight {
   background-color: #FFD344;
   margin-left: 86.1vw;
   margin-top: -44.1vw;
 }
-
-.mainCircle {
+#heroCircles .mainCircle {
   background-color: #F4B582;
   padding-left: 30px;
   color: white;
@@ -98,7 +99,7 @@ header nav a {
 }
 
 .ctaButton {
-  border-radius: 30px;
+  border-radius: 50px;
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
@@ -107,6 +108,23 @@ header nav a {
   background: #25b0ac;
   background: linear-gradient(90deg, rgba(37, 176, 172, 0.66) 0%, rgba(67, 232, 227, 0.48) 100%);
   margin-top: 20px;
+}
+
+#techStackGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+}
+#techStackGrid img {
+  height: 80px;
+}
+#techStackGrid .adjustHeight {
+  height: 70px;
+}
+#techStackGrid .adjustWidth {
+  width: 150px;
+  height: auto;
+  margin-left: -45px;
 }
 
 @media screen and (min-width: 768px) {
