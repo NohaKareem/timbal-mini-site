@@ -21,6 +21,7 @@
 <body>
     <header>
         <nav>
+            <h1 class="hidden">Navigation menu</h1>
             <a href="#">Features</a>
             <a href="#">Tech Stack</a>
             <a href="#">About Me</a>
@@ -59,11 +60,38 @@
                 <h2 class="hidden">Custom systems</h2>
                 <h3>How much of my time am I actually<span class="animatedText"> productive?</span></h3>
                 <p>Good question! With timbal's custom-built systems, you can track just that by defining what is productive to you, what's creative, or anything else you wish to observe!</p>
+                <div class="featureImageCon">
+                    <picture>
+                        <!-- desktop  -->
+                        <source sizes="20vw" srcset="
+                            assets/images/systems_888.png 888w,
+                            assets/images/systems_1054.png 1054w,
+                            assets/images/systems_1182.png 1182w" media="(min-width: 768px)">
+                        <!-- mobile -->
+                        <img sizes="20vw" id="systemsImage" srcset="
+                            assets/images/systems_320.png 320w,
+                            assets/images/systems_521.png 521w, 
+                            assets/images/systems_673.png 673w" src="assets/images/systems_320.png"
+                            alt="Feature mobile prototype">
+                    </picture>
+                </div>
             </div>
             <div class="feature">
                 <h2 class="hidden">Analytics</h2>
                 <h3>Where did the time go?</h3>
                 <p>Timbal delivers insightful analytics visualized beautifully, for a quick glance and easier pattern-finding.</p>
+                <div class="featureImageCon">
+                    <picture>
+                        <!-- desktop  -->
+                        <source sizes="40vw" srcset="
+                            assets/images/analytics_816.png 816w,
+                            assets/images/analytics_1186.png 1186w" media="(min-width: 768px)">
+                        <!-- mobile -->
+                        <img sizes="40vw" id="analyticsImage" srcset="
+                            assets/images/analytics_320.png 320w" src="assets/images/analytics_320.png"
+                            alt="Feature mobile prototype">
+                    </picture>
+                </div>
             </div>
         </div>
         <div id="tectStackCon">
