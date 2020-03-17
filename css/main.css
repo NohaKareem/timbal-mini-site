@@ -14,12 +14,12 @@ p {
   font-size: 4.5vw;
 }
 
-h1, h3 {
+h1, h3, .sectionHeading {
   color: #52BCB9;
   margin-top: 40px;
 }
 
-h1 {
+h1, .sectionHeading {
   text-align: center;
   font-size: 9.5vw;
 }

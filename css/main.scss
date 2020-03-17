@@ -29,13 +29,13 @@ p {
     font-size: 4.5vw;
 }
 
-h1, h3 { 
+h1, h3, .sectionHeading { 
     color: $teal;
     margin-top: $baseMargin * 4;
     // font-weight: bold;
 }
 
-h1 {
+h1, .sectionHeading {
     text-align: center;
     font-size: 9.5vw;
 }
