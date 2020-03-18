@@ -5,11 +5,18 @@ $desktopWidth: 768px;
 $baseMargin: 10px;
 
 $teal: #52BCB9;//25b0ac;
+$gradientTeal1: rgba(37,176,172,0.66);// ~
+$gradientTeal2:  rgba(67,232,227,0.48);
 $translucentTeal: rgba($teal, 0.48); //#25b0ac
 $blushPink: #F4B582;
 $melon: #FFD344;
 $gray: #707070;
-$translucentGray: rgba($gray, 0.14);
+$translucentGray: rgba($gray, 0.14); //~
+
+@mixin gradient($angle, $color1, $color2) {
+    background: $color1;
+    background: linear-gradient($angle, $color1, $color2 100%); 
+}
 
 .hidden {
 	display: none;
@@ -47,24 +54,26 @@ h1, .sectionHeading {
 header {
     margin: $baseMargin * 2;
 
-    nav a {
-        text-decoration: none;
-        color: $gray; 
-        display: hidden; //~hide in mobile mode
+    nav {
+        display: none; //~hide in mobile mode
+        a {
+            text-decoration: none;
+            color: $gray; 
+        }
     }
 }
 
-// hero section - circles
+.circle {
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+}
+
+// hero section - circlesdesktopNav
 #heroCircles {
     #heroText {
         text-align: center;
-    }
-    
-    .circle {
-        border-radius: 50%;
-        
-        display: flex;
-        align-items: center;
     }
     
     .overlay {
@@ -156,10 +165,51 @@ header {
     text-decoration: none;
     color: white;
 
-    background: rgb(37,176,172);
-    background: linear-gradient(90deg, rgba(37,176,172,0.66) 0%, rgba(67,232,227,0.48) 100%); 
+    @include gradient(90deg, $gradientTeal1 0%, $gradientTeal2);
 
     margin-top: $baseMargin * 2;
+}
+
+// features section 
+$mblFeaturesCircleDim: 300px;
+
+%featuresCircles {//.customTrackingCircle, .customSystemsCircle, .analyticsCircle {
+    width: $mblFeaturesCircleDim; 
+    height: $mblFeaturesCircleDim;
+}
+
+.customTrackingCircle {
+    @extend %featuresCircles;
+    background-color: transparentize($melon, 0.5); 
+}
+
+.customSystemsCircle {
+    @extend %featuresCircles;
+    @include gradient(0deg, $gradientTeal1 0%, $gradientTeal2);
+}
+
+.analyticsCircle {
+    @extend %featuresCircles;
+    background-color: transparentize($melon, 0.5); 
+}
+
+.featuresImage {
+    position: absolute;
+}
+
+.customTrackingImage {
+    margin-top: -240px;
+    margin-left: 50px;
+}
+
+.customSystemsImage {
+    margin-top: -240px;
+    margin-left: 50px;
+}
+
+.analyticsImage {
+    margin-top: -240px;
+    margin-left: 50px;
 }
 
 // tech stack 
@@ -201,7 +251,7 @@ header {
     }
     
     // hero section - circles
-    $desktopMainCircleDim: 40vw;
+    $desktopMainCircleDim: 600px;//40vw; //40vw
     // .mainCircle {
     //     width: $desktopMainCircleDim;    
     //     height: $desktopMainCircleDim; //300px
@@ -250,13 +300,18 @@ header {
 
     .mainCircle {
         padding-left: $baseMargin * 3;
-
         width: $desktopMainCircleDim;    
         height: $desktopMainCircleDim; //300px
-        font-size: 4.5vw;
+        // font-size: 4.5vw;
+        font-size: 55px;
+        background-color: red;
     }
 
     #heroText p, .ctaButton {
         font-size: 7.25vh;
+    }
+
+    nav {
+        display: block; 
     }
 }

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width"> 
     <title>Timbal</title>
 
     <!-- fonts -->
@@ -20,7 +21,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav id="desktopNav">
             <h2 class="hidden">Navigation menu</h2>
             <a href="#">Features</a>
             <a href="#">Tech Stack</a>
@@ -56,7 +57,8 @@
                 <h3>I have no time to <span class="animatedText">read.</span></h3>
                 <p>We all have the time, timbal helps you find it. With timbal you track what you want, as much or as little as you want with your own custom variables and timbal's code language system.</p>
                 <div class="featureImageCon">
-                    <picture>
+                    <div class="circle customTrackingCircle"></div>
+                    <picture class="featuresImage customTrackingImage">
                         <!-- desktop ~minwidth -->
                         <source sizes="40vw" srcset="
                             assets/images/customTracking_825.png 825w,
@@ -74,7 +76,8 @@
                 <h3>How much of my time am I actually<span class="animatedText"> productive?</span></h3>
                 <p>Good question! With timbal's custom-built systems, you can track just that by defining what is productive to you, what's creative, or anything else you wish to observe!</p>
                 <div class="featureImageCon">
-                    <picture>
+                    <div class="circle customSystemsCircle"></div>
+                    <picture class="featuresImage customSystemsImage">
                         <!-- desktop  -->
                         <source sizes="20vw" srcset="
                             assets/images/systems_888.png 888w,
@@ -94,7 +97,8 @@
                 <h3>Where did the time go?</h3>
                 <p>Timbal delivers insightful analytics visualized beautifully, for a quick glance and easier pattern-finding.</p>
                 <div class="featureImageCon">
-                    <picture>
+                    <div class="circle analyticsCircle"></div>
+                    <picture class="featuresImage analyticsImage">
                         <!-- desktop  -->
                         <source sizes="40vw" srcset="
                             assets/images/analytics_816.png 816w,
