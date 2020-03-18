@@ -120,15 +120,19 @@ header nav a {
 
 .customTrackingCircle {
   background-color: rgba(255, 211, 68, 0.5);
+  margin-left: 43vw;
 }
 
 .customSystemsCircle {
-  background: rgba(37, 176, 172, 0.66) 0%;
-  background: linear-gradient(0deg, rgba(37, 176, 172, 0.66) 0%, rgba(67, 232, 227, 0.48) 100%);
+  background: rgba(37, 176, 172, 0.66);
+  background: linear-gradient(0deg, rgba(37, 176, 172, 0.66), rgba(67, 232, 227, 0.48) 100%);
+  margin-left: -30vw;
 }
 
 .analyticsCircle {
-  background-color: rgba(255, 211, 68, 0.5);
+  background: rgba(255, 211, 68, 0.5);
+  background: linear-gradient(180deg, rgba(255, 211, 68, 0.5), rgba(244, 181, 130, 0.7) 100%);
+  margin-left: 53vw;
 }
 
 .featuresImage {
@@ -137,17 +141,17 @@ header nav a {
 
 .customTrackingImage {
   margin-top: -240px;
-  margin-left: 50px;
+  margin-left: 51vw;
 }
 
 .customSystemsImage {
-  margin-top: -240px;
-  margin-left: 50px;
+  margin-top: -285px;
+  margin-left: -2vw;
 }
 
 .analyticsImage {
   margin-top: -240px;
-  margin-left: 50px;
+  margin-left: 25vw;
 }
 
 #techStackGrid {
