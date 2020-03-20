@@ -260,58 +260,59 @@ $mblFeaturesCircleDim: 300px;
     //     height: $desktopMainCircleDim; //300px
     //     font-size: 7.25vh;
     // }
+    
+    #heroCircles {
+        .topRight {
+            margin-left: $desktopMainCircleDim - $desktopMainCircleDim * 0.15 * 1.15;
+            margin-top: - $desktopMainCircleDim;
+            width: $desktopMainCircleDim * 0.25;
+            height: $desktopMainCircleDim * 0.25;
+        }
 
-    .topRight {
-        margin-left: $desktopMainCircleDim - $desktopMainCircleDim * 0.15 * 1.15;
-        margin-top: - $desktopMainCircleDim;
-        width: $desktopMainCircleDim * 0.25;
-        height: $desktopMainCircleDim * 0.25;
-    }
+        .bottomLeft {
+            margin-top: - $desktopMainCircleDim * 0.25;
+            width: $desktopMainCircleDim * 0.25;
+            height: $desktopMainCircleDim * 0.25;
+        }
 
-    .bottomLeft {
-        margin-top: - $desktopMainCircleDim * 0.25;
-        width: $desktopMainCircleDim * 0.25;
-        height: $desktopMainCircleDim * 0.25;
-    }
+        .backLayer {
+            margin-top: - $desktopMainCircleDim;
+            margin-left: $desktopMainCircleDim * 0.1;
+            width: $desktopMainCircleDim * 0.15;
+            height: $desktopMainCircleDim * 0.15;
+        }
 
-    .backLayer {
-        margin-top: - $desktopMainCircleDim;
-        margin-left: $desktopMainCircleDim * 0.1;
-        width: $desktopMainCircleDim * 0.15;
-        height: $desktopMainCircleDim * 0.15;
-    }
+        .small {
+            width: $desktopMainCircleDim * 0.09;
+            height: $desktopMainCircleDim * 0.09;
+        }
 
-    .small {
-        width: $desktopMainCircleDim * 0.09;
-        height: $desktopMainCircleDim * 0.09;
-    }
+        .topLeft {
+            margin-top: - $desktopMainCircleDim * 0.95;
+            margin-left: -$baseMargin;
+        }   
 
-    .topLeft {
-        margin-top: - $desktopMainCircleDim * 0.95;
-        margin-left: -$baseMargin;
-    }   
+        .bottomRight {
+            margin-top: - $desktopMainCircleDim * (0.25 / 1.5);
+            margin-left: $desktopMainCircleDim;
+        }   
 
-    .bottomRight {
-        margin-top: - $desktopMainCircleDim * (0.25 / 1.5);
-        margin-left: $desktopMainCircleDim;
-    }   
+        .middleRight {
+            margin-left: $desktopMainCircleDim * 1.23;
+            margin-top: - $desktopMainCircleDim * 0.63;
+        }
 
-    .middleRight {
-        margin-left: $desktopMainCircleDim * 1.23;
-        margin-top: - $desktopMainCircleDim * 0.63;
-    }
+        .mainCircle {
+            padding-left: $baseMargin * 3;
+            width: $desktopMainCircleDim;    
+            height: $desktopMainCircleDim; //300px
+            // font-size: 4.5vw;
+            font-size: 55px;
+        }
 
-    .mainCircle {
-        padding-left: $baseMargin * 3;
-        width: $desktopMainCircleDim;    
-        height: $desktopMainCircleDim; //300px
-        // font-size: 4.5vw;
-        font-size: 55px;
-        background-color: red;
-    }
-
-    #heroText p, .ctaButton {
-        font-size: 7.25vh;
+        #heroText p, .ctaButton {
+            font-size: 7.25vh;
+        }
     }
 
     nav {

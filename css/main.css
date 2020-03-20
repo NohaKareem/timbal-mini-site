@@ -184,55 +184,46 @@ header nav a {
     text-align: left;
   }
 
-  .topRight {
+  #heroCircles .topRight {
     margin-left: 496.5px;
     margin-top: -600px;
     width: 150px;
     height: 150px;
   }
-
-  .bottomLeft {
+  #heroCircles .bottomLeft {
     margin-top: -150px;
     width: 150px;
     height: 150px;
   }
-
-  .backLayer {
+  #heroCircles .backLayer {
     margin-top: -600px;
     margin-left: 60px;
     width: 90px;
     height: 90px;
   }
-
-  .small {
+  #heroCircles .small {
     width: 54px;
     height: 54px;
   }
-
-  .topLeft {
+  #heroCircles .topLeft {
     margin-top: -570px;
     margin-left: -10px;
   }
-
-  .bottomRight {
+  #heroCircles .bottomRight {
     margin-top: -100px;
     margin-left: 600px;
   }
-
-  .middleRight {
+  #heroCircles .middleRight {
     margin-left: 738px;
     margin-top: -378px;
   }
-
-  .mainCircle {
+  #heroCircles .mainCircle {
     padding-left: 30px;
     width: 600px;
     height: 600px;
     font-size: 55px;
-    background-color: red;
   }
-
-  #heroText p, .ctaButton {
+  #heroCircles #heroText p, #heroCircles .ctaButton {
     font-size: 7.25vh;
   }
 
