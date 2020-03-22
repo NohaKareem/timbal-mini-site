@@ -5,14 +5,13 @@
 body {
   font-family: "Quattrocento Sans", sans-serif;
   color: #707070;
-  font-size: 6.5vw;
+  font-size: 19px;
   background-color: #F0F0F0;
 }
 
 p {
   margin-top: 10px;
   margin-bottom: 20px;
-  font-size: 4.5vw;
 }
 
 h1, h3, .sectionHeading {
@@ -22,7 +21,7 @@ h1, h3, .sectionHeading {
 
 h1, .sectionHeading {
   text-align: center;
-  font-size: 9.5vw;
+  font-size: 40px;
 }
 
 .container {
@@ -44,6 +43,7 @@ header nav a {
   border-radius: 50%;
   display: flex;
   align-items: center;
+  box-shadow: -5px -5px 15px 0 white, 5px 5px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
 #heroCircles #heroText {
@@ -96,10 +96,8 @@ header nav a {
   background-color: #F4B582;
   padding-left: 30px;
   color: white;
-  box-shadow: 2px 2px 5px 1px rgba(112, 112, 112, 0.14);
   width: 70vw;
   height: 70vw;
-  font-size: 7.25vw;
 }
 
 .ctaButton {
@@ -107,12 +105,17 @@ header nav a {
   padding: 10px;
   padding-left: 30px;
   padding-right: 30px;
-  font-size: 20px;
+  font-size: 19px;
   text-decoration: none;
-  margin-top: 20px;
+  margin: 20px auto;
   color: #707070;
   background-color: #F0F0F0;
   box-shadow: -5px -5px 15px 0 white, 5px 5px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.ctaButton:hover {
+  box-shadow: inset -5px -5px 15px 0 white, inset 5px 5px 15px 0 rgba(0, 0, 0, 0.1);
+  color: #52BCB9;
 }
 
 .analyticsCircle, .customSystemsCircle, .customTrackingCircle {
@@ -226,7 +229,7 @@ header nav a {
     font-size: 55px;
   }
   #heroCircles #heroText p {
-    font-size: 7.25vh;
+    font-size: 27px;
   }
   #heroCircles .ctaButton {
     font-size: 30px;

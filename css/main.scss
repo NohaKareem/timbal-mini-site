@@ -4,6 +4,7 @@ $desktopWidth: 768px;
 $grayWhite: #F0F0F0;
 
 $baseMargin: 10px;
+$bodyFontSize: 19px;
 
 $teal: #52BCB9;//25b0ac;
 $gradientTeal1: rgba(37,176,172,0.66);// ~
@@ -25,6 +26,12 @@ $translucentGray: rgba($gray, 0.14); //~
         5px 5px 15px 0 transparentize(black, 0.9);  
 }
 
+@mixin softUiInsetShadow() {
+    box-shadow:
+        inset -5px -5px 15px 0 white,
+        inset 5px 5px 15px 0 transparentize(black, 0.9);  
+}
+
 .hidden {
 	display: none;
 }
@@ -32,16 +39,17 @@ $translucentGray: rgba($gray, 0.14); //~
 body {
     font-family: 'Quattrocento Sans', sans-serif;
     color: $gray;
-    font-size: 6.5vw;
+    // font-size: 6.5vw;//~
+    font-size: $bodyFontSize;
     background-color: $grayWhite;
 }
 
-p { 
+p {
     margin-top: $baseMargin;
     margin-bottom: $baseMargin * 2;
 
     // mobile styles
-    font-size: 4.5vw;
+    // font-size: 4.5vw;
 }
 
 h1, h3, .sectionHeading { 
@@ -52,7 +60,8 @@ h1, h3, .sectionHeading {
 
 h1, .sectionHeading {
     text-align: center;
-    font-size: 9.5vw;
+    // font-size: 9.5vw;//~#
+    font-size: 40px;
 }
 
 .container {
@@ -76,6 +85,8 @@ header {
     
     display: flex;
     align-items: center;
+
+    @include softUiShadow();//~
 }
 
 // hero section - circlesdesktopNav
@@ -155,12 +166,12 @@ header {
         padding-left: $baseMargin * 3;
         color: white;
     
-        box-shadow: 2px 2px 5px 1px $translucentGray;
+        // box-shadow: 2px 2px 5px 1px $translucentGray;
     
         // mobile styles
         width: $mblMainCircleDim;    
         height: $mblMainCircleDim;
-        font-size: 7.25vw;
+        // font-size: 7.25vw;//~#
     }
 }
 
@@ -170,19 +181,24 @@ header {
     padding-left: $baseMargin * 3;
     padding-right: $baseMargin * 3;
     // font-size: $baseMargin;//~
-    font-size: 20px;
+    font-size: $bodyFontSize;//20px
 
     text-decoration: none;
     // color: white;
 
     // @include gradient(90deg, $gradientTeal1 0%, $gradientTeal2);
 
-    margin-top: $baseMargin * 2;
+    margin: $baseMargin * 2 auto;
+    // margin-top: $baseMargin * 2;
     
     color: $gray;
     background-color: $grayWhite;
-
     @include softUiShadow();
+}
+
+.ctaButton:hover {
+    @include softUiInsetShadow();
+    color: $teal;
 }
 
 // features section 
@@ -326,7 +342,8 @@ $mblFeaturesCircleDim: 300px;
         }
 
         #heroText p {
-            font-size: 7.25vh;
+            // font-size: 7.25vh;//~~~
+            font-size: 27px;
         }
 
         .ctaButton {
