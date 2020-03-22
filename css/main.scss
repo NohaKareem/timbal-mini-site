@@ -4,7 +4,10 @@ $desktopWidth: 768px;
 $grayWhite: #F0F0F0;
 
 $baseMargin: 10px;
-$bodyFontSize: 19px;
+$bodyFontSize: 17px;
+$h3FontSize: 25px;
+$h1FontSize: 40px;
+$mainCricleFontSize: 30px;
 
 $teal: #52BCB9;//25b0ac;
 $gradientTeal1: rgba(37,176,172,0.66);// ~
@@ -42,12 +45,14 @@ body {
     // font-size: 6.5vw;//~
     font-size: $bodyFontSize;
     background-color: $grayWhite;
+
+    overflow-x: hidden;
 }
 
 p {
     margin-top: $baseMargin;
     margin-bottom: $baseMargin * 2;
-
+    
     // mobile styles
     // font-size: 4.5vw;
 }
@@ -61,7 +66,12 @@ h1, h3, .sectionHeading {
 h1, .sectionHeading {
     text-align: center;
     // font-size: 9.5vw;//~#
-    font-size: 40px;
+    font-size: $h1FontSize;
+}
+
+h3 {
+    font-size: $h3FontSize;
+    font-weight: bold;
 }
 
 .container {
@@ -86,15 +96,22 @@ header {
     display: flex;
     align-items: center;
 
-    @include softUiShadow();//~
+    @include softUiShadow();
+}
+
+#heroText {
+    margin: $baseMargin * 3 auto;
+    
+    p { 
+        margin-bottom: $baseMargin * 3.5;
+    }
+
+    // mobile style
+    text-align: center;
 }
 
 // hero section - circlesdesktopNav
 #heroCircles {
-    #heroText {
-        text-align: center;
-    }
-    
     .overlay {
         position: absolute;
     }
@@ -171,6 +188,7 @@ header {
         // mobile styles
         width: $mblMainCircleDim;    
         height: $mblMainCircleDim;
+        font-size: $mainCricleFontSize;
         // font-size: 7.25vw;//~#
     }
 }
@@ -188,8 +206,8 @@ header {
 
     // @include gradient(90deg, $gradientTeal1 0%, $gradientTeal2);
 
-    margin: $baseMargin * 2 auto;
-    // margin-top: $baseMargin * 2;
+    margin: $baseMargin * 4 auto;
+    margin-top: $baseMargin * -4;
     
     color: $gray;
     background-color: $grayWhite;
@@ -278,10 +296,23 @@ $mblFeaturesCircleDim: 300px;
     #heroCon {
         display: grid;
         grid-template-columns: 1.5fr 1fr;
-
-        #heroText {
-            text-align: left;
+    }
+    
+    #heroText {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        p {
+            // font-size: 7.25vh;//~~~
+            // margin-top: $baseMargin * 6;
+            font-size: 50px;//27px;
         }
+    }
+
+    .ctaButton {
+        font-size: 30px;
     }
     
     // hero section - circles
@@ -338,16 +369,11 @@ $mblFeaturesCircleDim: 300px;
             width: $desktopMainCircleDim;    
             height: $desktopMainCircleDim; //300px
             // font-size: 4.5vw;
-            font-size: 55px;
-        }
+            font-size: 65px;
 
-        #heroText p {
-            // font-size: 7.25vh;//~~~
-            font-size: 27px;
-        }
-
-        .ctaButton {
-            font-size: 30px;
+            p {
+                margin-left: $baseMargin * 2;
+            }
         }
     }
 
