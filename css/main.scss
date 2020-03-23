@@ -4,10 +4,10 @@ $desktopWidth: 768px;
 $grayWhite: #F0F0F0;
 
 $baseMargin: 10px;
-$bodyFontSize: 17px;
-$h3FontSize: 25px;
-$h1FontSize: 40px;
-$mainCricleFontSize: 30px;
+$bodyFontSize: 25px;
+$h3FontSize: 37px;
+$h1FontSize: 50px;
+$mainCricleFontSize: 40px;
 
 $teal: #52BCB9;//25b0ac;
 $gradientTeal1: rgba(37,176,172,0.66);// ~
@@ -174,24 +174,81 @@ header {
         background-color: $melon;
         
         // mobile styles
-        margin-left: $mblMainCircleDim * 1.23;
+        margin-left: $mblMainCircleDim * 1.2;
         margin-top: - $mblMainCircleDim * 0.63;
     }
     
     .mainCircle {
         background-color: $blushPink;    
-        padding-left: $baseMargin * 3;
+        padding-left: $baseMargin * 2.75;
         color: white;
-    
-        // box-shadow: 2px 2px 5px 1px $translucentGray;
     
         // mobile styles
         width: $mblMainCircleDim;    
         height: $mblMainCircleDim;
         font-size: $mainCricleFontSize;
-        // font-size: 7.25vw;//~#
     }
 }
+
+#aboutMeCircles {
+    display: flex;
+    justify-content: center;
+
+    // .overlay {
+    //     position: absolute;
+    // }
+    
+    $mblMainCircleDim: 70vw;
+    
+    img.circle {
+        width: $mblMainCircleDim / 1.5;
+        height: $mblMainCircleDim / 1.5;
+        object-fit: cover;
+        margin-top: $baseMargin * 4;
+        margin-bottom: $baseMargin * 4;
+    }
+}
+
+$largeFaFontSize: 51px;
+
+#socialCircles {
+    .bottomLeft {
+        position: absolute;
+        margin-top: 205px;
+        margin-left: 70px;
+        background-color: $teal;
+        font-size: $largeFaFontSize;
+    }
+
+    .backLayer {
+        background-color: $translucentTeal;
+        // position: absolute;
+        
+    }
+
+    .topRight {
+        margin-top: 0;
+        font-size: $largeFaFontSize;
+        position: absolute;   
+    }
+
+    .middleRight {
+        margin-top: 110px;
+        margin-left: 350px;
+        font-size: 25px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .circle {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        color: white;
+    }
+}
+
 
 .ctaButton {
     border-radius: $baseMargin * 5;
@@ -260,8 +317,8 @@ $mblFeaturesCircleDim: 300px;
 }
 
 .analyticsImage {
-    margin-top: -240px;
-    margin-left: 25vw;
+    margin-top: -255px;
+    margin-left: 15vw;
 }
 
 // tech stack 
@@ -284,6 +341,156 @@ $mblFeaturesCircleDim: 300px;
         width: 150px;
         height: auto;
         margin-left: $baseMargin * -4.5;
+    }
+}
+
+ $mblMainCircleDim: 70vw;
+    
+    .topRight {
+        background-color: $melon;
+    
+        // mobile styles
+        margin-left: $mblMainCircleDim - $mblMainCircleDim * 0.15 * 1.15;
+        margin-top: - $mblMainCircleDim;
+        width: $mblMainCircleDim * 0.25;
+        height: $mblMainCircleDim * 0.25;
+    }
+    
+    .bottomLeft {
+        background-color: $translucentTeal;
+        
+        // mobile styles
+        margin-top: - $mblMainCircleDim * 0.25;
+        width: $mblMainCircleDim * 0.25;
+        height: $mblMainCircleDim * 0.25;
+    }
+    
+    .backLayer {
+        background-color: $translucentTeal;
+        z-index: -1;
+        
+        // mobile styles
+        margin-top: - $mblMainCircleDim;
+        margin-left: $mblMainCircleDim * 0.1;
+        width: $mblMainCircleDim * 0.15;
+        height: $mblMainCircleDim * 0.15;
+    }
+    
+    .small {
+        // mobile styles
+        width: $mblMainCircleDim * 0.09;
+        height: $mblMainCircleDim * 0.09;
+    }
+    
+    .topLeft {
+        background-color: $melon;
+    
+        // mobile styles
+        margin-top: - $mblMainCircleDim * 0.95;
+        margin-left: -$baseMargin;
+    }   
+    
+    .bottomRight {
+        background-color: $translucentTeal;
+    
+        // mobile styles
+        margin-top: - $mblMainCircleDim * (0.25 / 1.5);
+        margin-left: $mblMainCircleDim;
+    }   
+    
+    .middleRight {
+        background-color: $melon;
+        
+        // mobile styles
+        margin-left: $mblMainCircleDim * 1.2;
+        margin-top: - $mblMainCircleDim * 0.63;
+    }
+    
+    .mainCircle {
+        background-color: $blushPink;    
+        padding-left: $baseMargin * 2.75;
+        color: white;
+    
+        // mobile styles
+        width: $mblMainCircleDim;    
+        height: $mblMainCircleDim;
+        font-size: $mainCricleFontSize;
+    }
+
+#aboutMeCircles {
+    $mblMainCircleDim: 70vw;
+
+    .topRight {
+        background-color: $melon;
+    
+        // mobile styles
+        margin-left: $mblMainCircleDim - $mblMainCircleDim * 0.15 * 1.15;
+        margin-top: - $mblMainCircleDim;
+        width: $mblMainCircleDim * 0.25;
+        height: $mblMainCircleDim * 0.25;
+
+
+    }
+    
+    .bottomLeft {
+        background-color: $translucentTeal;
+        
+        // mobile styles
+        margin-top: - $mblMainCircleDim * 0.25;
+        width: $mblMainCircleDim * 0.25;
+        height: $mblMainCircleDim * 0.25;
+    }
+    
+    .backLayer {
+        background-color: $translucentTeal;
+        z-index: -1;
+        
+        // mobile styles
+        margin-top: - $mblMainCircleDim;
+        margin-left: $mblMainCircleDim * 0.1;
+        width: $mblMainCircleDim * 0.15;
+        height: $mblMainCircleDim * 0.15;
+    }
+    
+    .small {
+        // mobile styles
+        width: $mblMainCircleDim * 0.09;
+        height: $mblMainCircleDim * 0.09;
+    }
+    
+    .topLeft {
+        background-color: $melon;
+    
+        // mobile styles
+        margin-top: - $mblMainCircleDim * 0.95;
+        margin-left: -$baseMargin;
+    }   
+    
+    .bottomRight {
+        background-color: $translucentTeal;
+    
+        // mobile styles
+        margin-top: - $mblMainCircleDim * (0.25 / 1.5);
+        margin-left: $mblMainCircleDim;
+    }   
+    
+    .middleRight {
+        background-color: $melon;
+        
+        // mobile styles
+        margin-left: $mblMainCircleDim * 1.2;
+        margin-top: - $mblMainCircleDim * 0.63;
+    }
+    
+    .mainCircle {
+        background-color: $blushPink;    
+        padding-left: $baseMargin * 2.75;
+        color: white;
+    
+        // mobile styles
+        width: $mblMainCircleDim;    
+        height: $mblMainCircleDim;
+        font-size: $mainCricleFontSize;
     }
 }
 
@@ -374,6 +581,103 @@ $mblFeaturesCircleDim: 300px;
             p {
                 margin-left: $baseMargin * 2;
             }
+        }
+    }
+
+    #socialCircles {
+        $dsktpLargeFaFontSize: 100px;
+
+        .topRight {
+            margin-left: $desktopMainCircleDim / 0.65;
+            // margin-top: $desktopMainCircleDim;
+            margin-top: $desktopMainCircleDim / 3.25;
+            width: $desktopMainCircleDim * 0.35;
+            height: $desktopMainCircleDim * 0.35;
+            font-size: $dsktpLargeFaFontSize;
+        }
+
+        .bottomLeft {
+            background-color: $teal;
+
+            margin-top: ($desktopMainCircleDim / 6) * 8;//~
+            margin-left: ($desktopMainCircleDim / 6) * 3.3;
+            width: ($desktopMainCircleDim / 6) * 1.6;
+            height: ($desktopMainCircleDim / 6) * 1.6;
+            font-size: $dsktpLargeFaFontSize * 1.05;
+        }
+
+        // .backLayer {
+        //     background-color: $translucentTeal;
+        //     z-index: -1;
+            
+        //     // mobile styles
+        //     margin-top: $desktopMainCircleDim;
+        //     margin-left: $desktopMainCircleDim * 0.1;
+        //     width: $desktopMainCircleDim * 0.15;
+        //     height: $desktopMainCircleDim * 0.15;
+        // }
+         
+        // .middleRight {
+        //     background-color: $melon;
+            
+        //     // mobile styles
+        //     margin-left: $mblMainCircleDim * 1.2;
+        //     margin-top: - $mblMainCircleDim * 0.63;
+        // }
+    }
+
+        // .middleRight {
+        //     background-color: $melon;
+            
+        //     // mobile styles
+        //     margin-left: $mblMainCircleDim * 1.2;
+        //     margin-top: - $mblMainCircleDim * 0.63;
+        // }
+        
+
+        img.circle {
+            width: $desktopMainCircleDim / 2;
+            height: $desktopMainCircleDim / 2;
+        }
+    #aboutMeCircles {
+        // img {
+        //     width: $desktopMainCircleDim / 2;
+        //     height: $desktopMainCircleDim / 2;
+        // }
+    
+        $mblMainCircleDim: 70vw;
+
+        .small {
+            // mobile styles
+            width: $mblMainCircleDim * 0.09;
+            height: $mblMainCircleDim * 0.09;
+        }
+        
+        .topLeft {
+            background-color: $melon;
+        
+            // mobile styles
+            margin-top: - $mblMainCircleDim * 0.95;
+            margin-left: -$baseMargin;
+        }   
+        
+        .bottomRight {
+            background-color: $translucentTeal;
+        
+            // mobile styles
+            margin-top: - $mblMainCircleDim * (0.25 / 1.5);
+            margin-left: $mblMainCircleDim;
+        }   
+       
+        .mainCircle {
+            background-color: $blushPink;    
+            padding-left: $baseMargin * 2.75;
+            color: white;
+        
+            // mobile styles
+            width: $mblMainCircleDim;    
+            height: $mblMainCircleDim;
+            font-size: $mainCricleFontSize;
         }
     }
 
