@@ -2,8 +2,8 @@
 (function() {
 	"use strict";
 
-	let navLinks = document.querySelectorAll("nav a");
-	// console.log(navLinks)
+	let emptyLinks = document.querySelectorAll('a[href="#"]');
+	// console.log(emptyLinks)
 
 	// ~green sock smooth scroll effect for navigation links
 	function smoothScroll(e) {
@@ -17,8 +17,8 @@
 		e.preventDefault();
 	}
 
-	navLinks.forEach(navLink => {
-		navLink.addEventListener("click", preventDefaultBehavior);
+	emptyLinks.forEach(emptyLink => {
+		emptyLink.addEventListener("click", preventDefaultBehavior);
 	});
 
 	function animateText() {

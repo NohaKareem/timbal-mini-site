@@ -37,10 +37,10 @@ h3 {
 header {
   margin: 20px;
 }
-header nav {
+header nav#desktopNav {
   display: none;
 }
-header nav a {
+header nav#desktopNav a {
   text-decoration: none;
   color: #707070;
 }
@@ -188,6 +188,7 @@ header nav a {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   align-items: center;
+  justify-items: center;
 }
 #techStackGrid img {
   height: 80px;
@@ -207,11 +208,17 @@ header nav a {
   font-size: 45px;
   color: white;
 }
+#aboutMeCircles .medium a, #aboutMeCircles .twitter a, #aboutMeCircles .stackoverflow a, #aboutMeCircles .github a {
+  color: white;
+}
 #aboutMeCircles .medium:hover, #aboutMeCircles .twitter:hover, #aboutMeCircles .stackoverflow:hover, #aboutMeCircles .github:hover {
   cursor: pointer;
   color: #FFD344;
   background-color: #F0F0F0;
   box-shadow: inset -5px -5px 15px 0 white, inset 5px 5px 15px 0 rgba(0, 0, 0, 0.1);
+}
+#aboutMeCircles .medium:hover a, #aboutMeCircles .twitter:hover a, #aboutMeCircles .stackoverflow:hover a, #aboutMeCircles .github:hover a {
+  color: #FFD344;
 }
 #aboutMeCircles .github {
   background-color: #52BCB9;
@@ -221,7 +228,7 @@ header nav a {
   margin-top: 35vw;
   margin-left: -46.6666666667vw;
 }
-#aboutMeCircles .github:hover {
+#aboutMeCircles .github:hover a {
   color: #52BCB9;
 }
 #aboutMeCircles .stackoverflow {
@@ -232,7 +239,7 @@ header nav a {
   margin-top: 7vw;
   margin-left: -14vw;
 }
-#aboutMeCircles .stackoverflow:hover {
+#aboutMeCircles .stackoverflow:hover a {
   color: rgba(82, 188, 185, 0.48);
 }
 #aboutMeCircles .twitter {
@@ -247,8 +254,8 @@ header nav a {
   width: 8.75vw;
   height: 8.75vw;
   font-size: 27px;
-  margin-top: 6.3636363636vw;
-  margin-left: -20vw;
+  margin-top: 35vw;
+  margin-left: 7vw;
 }
 
 #aboutMeGrid {
@@ -257,8 +264,15 @@ header nav a {
 }
 
 @media screen and (min-width: 768px) {
-  nav a {
+  nav#desktopNav {
+    display: block !important;
+  }
+  nav#desktopNav a {
     font-size: 20px;
+  }
+
+  nav#mblNav {
+    display: none;
   }
 
   #heroCon {
@@ -323,56 +337,55 @@ header nav a {
     margin-left: 20px;
   }
 
-  #socialCircles .topRight {
-    margin-left: 923.0769230769px;
-    margin-top: 184.6153846154px;
-    width: 210px;
-    height: 210px;
-    font-size: 100px;
-  }
-  #socialCircles .bottomLeft {
-    background-color: #52BCB9;
-    margin-top: 800px;
-    margin-left: 330px;
-    width: 160px;
-    height: 160px;
-    font-size: 105px;
-  }
-
   img.circle {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 
-  #aboutMeCircles .small {
-    width: 6.3vw;
-    height: 6.3vw;
+  #aboutMeCircles .github {
+    width: 100px;
+    height: 100px;
+    margin-top: 250px;
+    margin-left: -333.3333333333px;
   }
-  #aboutMeCircles .topLeft {
-    background-color: #FFD344;
-    margin-top: -66.5vw;
-    margin-left: -10px;
+  #aboutMeCircles .stackoverflow {
+    width: 76.9230769231px;
+    height: 76.9230769231px;
+    font-size: 27px;
+    margin-top: 50px;
+    margin-left: -14vw;
   }
-  #aboutMeCircles .bottomRight {
-    background-color: rgba(82, 188, 185, 0.48);
-    margin-top: -11.6666666667vw;
-    margin-left: 70vw;
-  }
-  #aboutMeCircles .mainCircle {
-    background-color: #F4B582;
-    padding-left: 27.5px;
-    color: white;
-    width: 70vw;
-    height: 70vw;
-    font-size: 40px;
-  }
-
-  nav {
-    display: block;
+  #aboutMeCircles .twitter {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 25vw;
   }
 
   #aboutMeGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .feature {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .customTrackingCircle, .customSystemsCircle, .analyticsCircle {
+    width: 600px;
+    height: 600px;
+  }
+
+  .customTrackingCircle {
+    margin-left: 43vw;
+  }
+
+  .customSystemsCircle {
+    margin-left: -30vw;
+  }
+
+  .analyticsCircle {
+    margin-left: 53vw;
   }
 }
 

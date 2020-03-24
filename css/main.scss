@@ -81,8 +81,8 @@ h3 {
 header {
     margin: $baseMargin * 2;
 
-    nav {
-        display: none; //~hide in mobile mode
+    nav#desktopNav {
+        display: none; // hide in mobile mode
         a {
             text-decoration: none;
             color: $gray; 
@@ -198,7 +198,7 @@ header {
     //     position: absolute;
     // }
     
-    $mblMainCircleDim: 70vw;
+    $mblMainCircleDim: 70vw; //~
     
     img.circle {
         width: $mblMainCircleDim / 1.5;
@@ -210,45 +210,6 @@ header {
 }
 
 $largeFaFontSize: 51px;
-
-// #socialCircles {
-//     .github {
-//         // .bottomLeft {
-//         position: absolute;
-//         margin-top: 605px;
-//         margin-left: 70px;
-//         background-color: $teal;
-//         font-size: $largeFaFontSize;
-//     }
-
-//     .backLayer {
-//         background-color: $translucentTeal;
-//         // position: absolute;
-        
-//     }
-
-//     .topRight {
-//         margin-top: 0;
-//         font-size: $largeFaFontSize;
-//         position: absolute;   
-//     }
-
-//     .middleRight {
-//         margin-top: 110px;
-//         margin-left: 350px;
-//         font-size: 25px;
-//         width: 40px;
-//         height: 40px;
-//     }
-
-//     .circle {
-//         display: flex;
-//         justify-content: center;
-//         align-content: center;
-//         align-items: center;
-//         color: white;
-//     }
-// }
 
 .ctaButton {
     border-radius: $baseMargin * 5;
@@ -326,6 +287,7 @@ $mblFeaturesCircleDim: 300px;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     align-items: center;
+    justify-items: center;
 
     // mobile styles
     img {
@@ -353,12 +315,18 @@ $mblFeaturesCircleDim: 300px;
         justify-content: center;
         font-size: 45px;
         color: white;
+        a { 
+            color: white;
+        }
         // @include softUiShadow();
      }
 
      %buttonIcon:hover {
          cursor: pointer;
          color: $melon;
+         a { 
+            color: $melon;
+        }
          background-color: $grayWhite;
          @include softUiInsetShadow();
      }
@@ -377,7 +345,9 @@ $mblFeaturesCircleDim: 300px;
     }
 
     .github:hover {
-        color: $teal;
+        a { 
+            color: $teal;
+        }
     }
 
     .stackoverflow {
@@ -391,11 +361,13 @@ $mblFeaturesCircleDim: 300px;
 
         margin-top: $mblMainCircleDim / 10;
         margin-left: -14vw;
-        // z-index: -1;
+        // z-index: -1; //~
     }
 
     .stackoverflow:hover {
-        color: $translucentTeal;
+        a { 
+            color: $translucentTeal; //~
+        }
     }
        
     .twitter {
@@ -418,8 +390,8 @@ $mblFeaturesCircleDim: 300px;
         height: $mblMainCircleDim / 8;
         font-size: 27px;
 
-        margin-top: $mblMainCircleDim / 11;
-        margin-left: -20vw;
+        margin-top: $mblMainCircleDim / 2;
+        margin-left: 7vw;
     }
 }
 
@@ -430,8 +402,15 @@ $mblFeaturesCircleDim: 300px;
 
 // desktop
 @media screen and (min-width: $desktopWidth) {
-    nav a {
-        font-size: 20px;
+    nav#desktopNav {
+        display: block !important;
+        a {
+            font-size: 20px;
+        }
+    }
+
+    nav#mblNav {
+        display: none;
     }
 
     #heroCon {
@@ -458,11 +437,6 @@ $mblFeaturesCircleDim: 300px;
     
     // hero section - circles
     $desktopMainCircleDim: 600px;//40vw; //40vw
-    // .mainCircle {
-    //     width: $desktopMainCircleDim;    
-    //     height: $desktopMainCircleDim; //300px
-    //     font-size: 7.25vh;
-    // }
     
     #heroCircles {
         .topRight {
@@ -518,109 +492,78 @@ $mblFeaturesCircleDim: 300px;
         }
     }
 
-    #socialCircles {
-        $dsktpLargeFaFontSize: 100px;
+    // about me
+    // $mblMainCircleDim: 70vw;
+    $desktopAboutMeCircleDim: 500px; //60vw;
 
-        .topRight {
-            margin-left: $desktopMainCircleDim / 0.65;
-            // margin-top: $desktopMainCircleDim;
-            margin-top: $desktopMainCircleDim / 3.25;
-            width: $desktopMainCircleDim * 0.35;
-            height: $desktopMainCircleDim * 0.35;
-            font-size: $dsktpLargeFaFontSize;
-        }
-
-        .bottomLeft {
-            background-color: $teal;
-
-            margin-top: ($desktopMainCircleDim / 6) * 8;//~
-            margin-left: ($desktopMainCircleDim / 6) * 3.3;
-            width: ($desktopMainCircleDim / 6) * 1.6;
-            height: ($desktopMainCircleDim / 6) * 1.6;
-            font-size: $dsktpLargeFaFontSize * 1.05;
-        }
-
-        // .backLayer {
-        //     background-color: $translucentTeal;
-        //     z-index: -1;
-            
-        //     // mobile styles
-        //     margin-top: $desktopMainCircleDim;
-        //     margin-left: $desktopMainCircleDim * 0.1;
-        //     width: $desktopMainCircleDim * 0.15;
-        //     height: $desktopMainCircleDim * 0.15;
-        // }
-         
-        // .middleRight {
-        //     background-color: $melon;
-            
-        //     // mobile styles
-        //     margin-left: $mblMainCircleDim * 1.2;
-        //     margin-top: - $mblMainCircleDim * 0.63;
-        // }
+    img.circle {
+        width: $desktopAboutMeCircleDim / 2;
+        height: $desktopAboutMeCircleDim / 2;
     }
 
-        // .middleRight {
-        //     background-color: $melon;
-            
-        //     // mobile styles
-        //     margin-left: $mblMainCircleDim * 1.2;
-        //     margin-top: - $mblMainCircleDim * 0.63;
-        // }
-        
-
-        img.circle {
-            width: $desktopMainCircleDim / 2;
-            height: $desktopMainCircleDim / 2;
-        }
     #aboutMeCircles {
-        // img {
-        //     width: $desktopMainCircleDim / 2;
-        //     height: $desktopMainCircleDim / 2;
+        .github {
+            width: $desktopAboutMeCircleDim / 5;
+            height: $desktopAboutMeCircleDim / 5;
+            margin-top: $desktopAboutMeCircleDim - $desktopAboutMeCircleDim / 2;
+            margin-left: -$desktopAboutMeCircleDim / 1.5;
+        }
+
+        .stackoverflow {
+            width: $desktopAboutMeCircleDim / 6.5;
+            height: $desktopAboutMeCircleDim / 6.5;
+            font-size: 27px;
+
+            margin-top: $desktopAboutMeCircleDim / 10;
+            margin-left: -14vw;
+            // z-index: -1; //~
+        }
+        
+        .twitter {
+            width: $desktopAboutMeCircleDim / 5;
+            height: $desktopAboutMeCircleDim / 5;
+            margin-top: $desktopAboutMeCircleDim / 10;
+            margin-left: 25vw;
+        }
+
+        // .medium {
+        //     width: $desktopAboutMeCircleDim / 8;
+        //     height: $desktopAboutMeCircleDim / 8;
+        //     font-size: 27px;
+
+        //     margin-top: $desktopAboutMeCircleDim / 2;
+        //     margin-left: 7vw;
         // }
-    
-        $mblMainCircleDim: 70vw;
-
-        .small {
-            // mobile styles
-            width: $mblMainCircleDim * 0.09;
-            height: $mblMainCircleDim * 0.09;
-        }
-        
-        .topLeft {
-            background-color: $melon;
-        
-            // mobile styles
-            margin-top: - $mblMainCircleDim * 0.95;
-            margin-left: -$baseMargin;
-        }   
-        
-        .bottomRight {
-            background-color: $translucentTeal;
-        
-            // mobile styles
-            margin-top: - $mblMainCircleDim * (0.25 / 1.5);
-            margin-left: $mblMainCircleDim;
-        }   
-       
-        .mainCircle {
-            background-color: $blushPink;    
-            padding-left: $baseMargin * 2.75;
-            color: white;
-        
-            // mobile styles
-            width: $mblMainCircleDim;    
-            height: $mblMainCircleDim;
-            font-size: $mainCricleFontSize;
-        }
-    }
-
-    nav {
-        display: block; 
     }
 
     #aboutMeGrid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-
     }
+
+    // features 
+    .feature {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    %featuresCircles {
+        width: $desktopMainCircleDim; 
+        height: $desktopMainCircleDim;
+    }
+    
+    .customTrackingCircle {
+        @extend %featuresCircles;
+        margin-left: 43vw;
+    }
+    
+    .customSystemsCircle {
+        @extend %featuresCircles;
+        margin-left: -30vw;
+    }
+    
+    .analyticsCircle {
+        @extend %featuresCircles;
+        margin-left: 53vw;
+    }
+    
 }
