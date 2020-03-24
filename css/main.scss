@@ -78,14 +78,40 @@ h3 {
     margin: $baseMargin * 2;
 }
 
+// nav
 header {
     margin: $baseMargin * 2;
+    
+    nav {
+        a {
+            color: $teal;
+            text-decoration: none;
+        }
+        a:hover {
+            color: $gray;
+        }
+        ul {
+            li {
+                display: inline;
+            }
+        }
+    }
 
     nav#desktopNav {
         display: none; // hide in mobile mode
         a {
             text-decoration: none;
             color: $gray; 
+        }
+    }
+
+    nav#mblNavMenu {
+        ul {
+           li {
+            color: red;
+            display: grid;
+            grid-template-rows: repeat(3, minmax(0, 1fr));
+           }
         }
     }
 }
