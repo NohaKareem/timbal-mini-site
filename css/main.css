@@ -44,9 +44,6 @@ header nav a {
 header nav a:hover {
   color: #707070;
 }
-header nav ul li {
-  display: inline;
-}
 header nav#desktopNav {
   display: none;
 }
@@ -54,10 +51,15 @@ header nav#desktopNav a {
   text-decoration: none;
   color: #707070;
 }
-header nav#mblNavMenu ul li {
-  color: red;
-  display: grid;
-  grid-template-rows: repeat(3, minmax(0, 1fr));
+header nav#desktopNav ul li {
+  display: inline;
+}
+header #mblNavMenu {
+  margin: 30px;
+}
+header #mblNavMenu ul li {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .circle {

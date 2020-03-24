@@ -3,6 +3,8 @@
 	"use strict";
 
 	let emptyLinks = document.querySelectorAll('a[href="#"]');
+	let mblNavBurger = document.querySelector('#mblNavBurger');
+	let mblNavMenu = document.querySelector('#mblNavMenu');
 	// console.log(emptyLinks)
 
 	// ~green sock smooth scroll effect for navigation links
@@ -19,6 +21,11 @@
 
 	emptyLinks.forEach(emptyLink => {
 		emptyLink.addEventListener("click", preventDefaultBehavior);
+	});
+
+	// show nav menu on click 
+	mblNavBurger.addEventListener("click", () => {
+		mblNavMenu.classList.toggle('hidden');
 	});
 
 	function animateText() {

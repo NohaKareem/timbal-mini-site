@@ -90,11 +90,6 @@ header {
         a:hover {
             color: $gray;
         }
-        ul {
-            li {
-                display: inline;
-            }
-        }
     }
 
     nav#desktopNav {
@@ -103,14 +98,19 @@ header {
             text-decoration: none;
             color: $gray; 
         }
+        ul {
+            li {
+                display: inline;
+            }
+        }
     }
 
-    nav#mblNavMenu {
+    #mblNavMenu {
+        margin: $baseMargin * 3;
         ul {
            li {
-            color: red;
-            display: grid;
-            grid-template-rows: repeat(3, minmax(0, 1fr));
+            text-align: center;
+            margin-bottom: $baseMargin * 2;
            }
         }
     }
