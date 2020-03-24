@@ -382,13 +382,13 @@ $mblFeaturesCircleDim: 300px;
 
     .stackoverflow {
         background-color: $translucentTeal;
-        width: 50px;
-        height: 50px;
-
         @extend %buttonIcon;
 
         // mobile styles
-        font-size: 30px;
+        width: $mblMainCircleDim / 6.5;
+        height: $mblMainCircleDim / 6.5;
+        font-size: 27px;
+
         margin-top: $mblMainCircleDim / 10;
         margin-left: -14vw;
         // z-index: -1;
@@ -399,19 +399,27 @@ $mblFeaturesCircleDim: 300px;
     }
        
     .twitter {
-        background-color: red;
-        width: 50px;
-        height: 50px;
-        margin-top: $mblMainCircleDim * -0.5;
-        margin-left: 40vw;
+        background-color: $melon;
+        @extend %buttonIcon;
+
+        // mobile styles
+        width: $mblMainCircleDim / 5;
+        height: $mblMainCircleDim / 5;
+        margin-top: $mblMainCircleDim / 10;
+        margin-left: 25vw;
     }
 
     .medium {
-        background-color: red;
-        width: 30px;
-        height: 30px;
-        margin-top: $mblMainCircleDim * -0.35;
-        margin-left: 50vw;
+        background-color: $melon;
+        @extend %buttonIcon;
+
+        // mobile styles
+        width: $mblMainCircleDim / 8;
+        height: $mblMainCircleDim / 8;
+        font-size: 27px;
+
+        margin-top: $mblMainCircleDim / 11;
+        margin-left: -20vw;
     }
 }
 
