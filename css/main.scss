@@ -211,44 +211,44 @@ header {
 
 $largeFaFontSize: 51px;
 
-#socialCircles {
-    .bottomLeft {
-        position: absolute;
-        margin-top: 205px;
-        margin-left: 70px;
-        background-color: $teal;
-        font-size: $largeFaFontSize;
-    }
+// #socialCircles {
+//     .github {
+//         // .bottomLeft {
+//         position: absolute;
+//         margin-top: 605px;
+//         margin-left: 70px;
+//         background-color: $teal;
+//         font-size: $largeFaFontSize;
+//     }
 
-    .backLayer {
-        background-color: $translucentTeal;
-        // position: absolute;
+//     .backLayer {
+//         background-color: $translucentTeal;
+//         // position: absolute;
         
-    }
+//     }
 
-    .topRight {
-        margin-top: 0;
-        font-size: $largeFaFontSize;
-        position: absolute;   
-    }
+//     .topRight {
+//         margin-top: 0;
+//         font-size: $largeFaFontSize;
+//         position: absolute;   
+//     }
 
-    .middleRight {
-        margin-top: 110px;
-        margin-left: 350px;
-        font-size: 25px;
-        width: 40px;
-        height: 40px;
-    }
+//     .middleRight {
+//         margin-top: 110px;
+//         margin-left: 350px;
+//         font-size: 25px;
+//         width: 40px;
+//         height: 40px;
+//     }
 
-    .circle {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        color: white;
-    }
-}
-
+//     .circle {
+//         display: flex;
+//         justify-content: center;
+//         align-content: center;
+//         align-items: center;
+//         color: white;
+//     }
+// }
 
 .ctaButton {
     border-radius: $baseMargin * 5;
@@ -344,154 +344,80 @@ $mblFeaturesCircleDim: 300px;
     }
 }
 
+// about me
  $mblMainCircleDim: 70vw;
-    
-    .topRight {
-        background-color: $melon;
-    
-        // mobile styles
-        margin-left: $mblMainCircleDim - $mblMainCircleDim * 0.15 * 1.15;
-        margin-top: - $mblMainCircleDim;
-        width: $mblMainCircleDim * 0.25;
-        height: $mblMainCircleDim * 0.25;
-    }
-    
-    .bottomLeft {
-        background-color: $translucentTeal;
-        
-        // mobile styles
-        margin-top: - $mblMainCircleDim * 0.25;
-        width: $mblMainCircleDim * 0.25;
-        height: $mblMainCircleDim * 0.25;
-    }
-    
-    .backLayer {
-        background-color: $translucentTeal;
-        z-index: -1;
-        
-        // mobile styles
-        margin-top: - $mblMainCircleDim;
-        margin-left: $mblMainCircleDim * 0.1;
-        width: $mblMainCircleDim * 0.15;
-        height: $mblMainCircleDim * 0.15;
-    }
-    
-    .small {
-        // mobile styles
-        width: $mblMainCircleDim * 0.09;
-        height: $mblMainCircleDim * 0.09;
-    }
-    
-    .topLeft {
-        background-color: $melon;
-    
-        // mobile styles
-        margin-top: - $mblMainCircleDim * 0.95;
-        margin-left: -$baseMargin;
-    }   
-    
-    .bottomRight {
-        background-color: $translucentTeal;
-    
-        // mobile styles
-        margin-top: - $mblMainCircleDim * (0.25 / 1.5);
-        margin-left: $mblMainCircleDim;
-    }   
-    
-    .middleRight {
-        background-color: $melon;
-        
-        // mobile styles
-        margin-left: $mblMainCircleDim * 1.2;
-        margin-top: - $mblMainCircleDim * 0.63;
-    }
-    
-    .mainCircle {
-        background-color: $blushPink;    
-        padding-left: $baseMargin * 2.75;
+
+ #aboutMeCircles {
+     %buttonIcon {
+        display: flex;
+        justify-content: center;
+        font-size: 45px;
         color: white;
-    
-        // mobile styles
-        width: $mblMainCircleDim;    
-        height: $mblMainCircleDim;
-        font-size: $mainCricleFontSize;
-    }
+        // @include softUiShadow();
+     }
 
-#aboutMeCircles {
-    $mblMainCircleDim: 70vw;
+     %buttonIcon:hover {
+         cursor: pointer;
+         color: $melon;
+         background-color: $grayWhite;
+         @include softUiInsetShadow();
+     }
 
-    .topRight {
-        background-color: $melon;
-    
-        // mobile styles
-        margin-left: $mblMainCircleDim - $mblMainCircleDim * 0.15 * 1.15;
-        margin-top: - $mblMainCircleDim;
-        width: $mblMainCircleDim * 0.25;
-        height: $mblMainCircleDim * 0.25;
-
-
-    }
-    
-    .bottomLeft {
-        background-color: $translucentTeal;
-        
-        // mobile styles
-        margin-top: - $mblMainCircleDim * 0.25;
-        width: $mblMainCircleDim * 0.25;
-        height: $mblMainCircleDim * 0.25;
-    }
-    
-    .backLayer {
-        background-color: $translucentTeal;
-        z-index: -1;
-        
-        // mobile styles
-        margin-top: - $mblMainCircleDim;
-        margin-left: $mblMainCircleDim * 0.1;
-        width: $mblMainCircleDim * 0.15;
-        height: $mblMainCircleDim * 0.15;
-    }
-    
-    .small {
-        // mobile styles
-        width: $mblMainCircleDim * 0.09;
-        height: $mblMainCircleDim * 0.09;
-    }
-    
-    .topLeft {
-        background-color: $melon;
-    
-        // mobile styles
-        margin-top: - $mblMainCircleDim * 0.95;
-        margin-left: -$baseMargin;
-    }   
-    
-    .bottomRight {
-        background-color: $translucentTeal;
-    
-        // mobile styles
-        margin-top: - $mblMainCircleDim * (0.25 / 1.5);
-        margin-left: $mblMainCircleDim;
-    }   
-    
-    .middleRight {
-        background-color: $melon;
-        
-        // mobile styles
-        margin-left: $mblMainCircleDim * 1.2;
-        margin-top: - $mblMainCircleDim * 0.63;
-    }
-    
-    .mainCircle {
-        background-color: $blushPink;    
-        padding-left: $baseMargin * 2.75;
+    .github {
+        background-color: $teal;
         color: white;
-    
+
+        @extend %buttonIcon;
+
         // mobile styles
-        width: $mblMainCircleDim;    
-        height: $mblMainCircleDim;
-        font-size: $mainCricleFontSize;
+        width: $mblMainCircleDim / 5;
+        height: $mblMainCircleDim / 5;
+        margin-top: $mblMainCircleDim - $mblMainCircleDim / 2;
+        margin-left: -$mblMainCircleDim / 1.5;
     }
+
+    .github:hover {
+        color: $teal;
+    }
+
+    .stackoverflow {
+        background-color: $translucentTeal;
+        width: 50px;
+        height: 50px;
+
+        @extend %buttonIcon;
+
+        // mobile styles
+        font-size: 30px;
+        margin-top: $mblMainCircleDim / 10;
+        margin-left: -14vw;
+        // z-index: -1;
+    }
+
+    .stackoverflow:hover {
+        color: $translucentTeal;
+    }
+       
+    .twitter {
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        margin-top: $mblMainCircleDim * -0.5;
+        margin-left: 40vw;
+    }
+
+    .medium {
+        background-color: red;
+        width: 30px;
+        height: 30px;
+        margin-top: $mblMainCircleDim * -0.35;
+        margin-left: 50vw;
+    }
+}
+
+#aboutMeGrid {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 // desktop
@@ -683,5 +609,10 @@ $mblFeaturesCircleDim: 300px;
 
     nav {
         display: block; 
+    }
+
+    #aboutMeGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
     }
 }

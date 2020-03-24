@@ -1,0 +1,64 @@
+$baseMargin: 10px;
+$mblMainCircleDim: 70vw;
+
+@mixin softUiShadow() {
+    box-shadow:
+        -5px -5px 15px 0 white,
+        5px 5px 15px 0 transparentize(black, 0.9);  
+}
+
+.circle {
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+
+    @include softUiShadow();
+}
+
+img.circle {
+    width: $mblMainCircleDim / 1.5;
+    height: $mblMainCircleDim / 1.5;
+    object-fit: cover;
+    margin-top: $baseMargin * 4;
+    margin-bottom: $baseMargin * 4;
+}
+
+.overlay {
+    position: absolute;
+}
+
+#aboutMeCircles {
+    .github {
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        margin-top: $mblMainCircleDim * -0.25;
+        margin-left: 3vw;
+    }
+
+    .stackoverflow {
+        background-color: blue;
+        width: 50px;
+        height: 50px;
+        margin-top: $mblMainCircleDim * -0.8;
+        margin-left: 2vw;
+        z-index: -1;
+    }
+       
+    .twitter {
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        margin-top: $mblMainCircleDim * -0.5;
+        margin-left: 40vw;
+    }
+
+    .medium {
+        background-color: red;
+        width: 30px;
+        height: 30px;
+        margin-top: $mblMainCircleDim * -0.35;
+        margin-left: 50vw;
+    }
+}
