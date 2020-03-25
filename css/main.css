@@ -481,7 +481,7 @@ footer #signUpLink {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .analyticsFeature .feature {
-    display: contents;
+    display: initial;
   }
   .analyticsFeature .feature .ctaButtonSmall {
     order: 6;
