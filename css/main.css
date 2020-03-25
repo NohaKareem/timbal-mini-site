@@ -202,7 +202,7 @@ header #mblNavMenu ul li {
 .customSystemsCircle {
   background: rgba(37, 176, 172, 0.66);
   background: linear-gradient(0deg, rgba(37, 176, 172, 0.66), rgba(67, 232, 227, 0.48) 100%);
-  margin-left: -5vw;
+  margin-left: 3vw;
 }
 
 .analyticsCircle {
@@ -222,7 +222,7 @@ header #mblNavMenu ul li {
 
 .customSystemsImage {
   margin-top: -290px;
-  margin-left: 15vw;
+  margin-left: 21vw;
 }
 
 .analyticsImage {
@@ -249,6 +249,14 @@ header #mblNavMenu ul li {
   margin-top: -50px;
 }
 
+.customTrackingFeatureCon .featureText p {
+  padding-bottom: 50px;
+}
+
+.systemsFeature .featureText h3 {
+  padding-top: 45px;
+}
+
 .customTrackingFeatureCon .featureImageCon {
   margin-top: -50px;
 }
@@ -263,7 +271,7 @@ header #mblNavMenu ul li {
 }
 
 .analyticsFeatureCon h3 {
-  padding-top: 70px;
+  padding-top: 100px;
 }
 .analyticsFeatureCon .ctaButton {
   margin-top: 5px;
@@ -368,9 +376,14 @@ footer #signUpLink {
 @media screen and (min-width: 768px) {
   nav#desktopNav {
     display: block !important;
+    text-align: right;
   }
-  nav#desktopNav a {
+  nav#desktopNav li a {
+    color: #52BCB9;
     font-size: 20px;
+  }
+  nav#desktopNav li a:hover {
+    color: #707070;
   }
 
   nav#mblNav {
@@ -483,7 +496,7 @@ footer #signUpLink {
   }
 
   .customSystemsCircle {
-    margin-left: -30vw;
+    margin-left: -40vw;
   }
 
   .analyticsCircle {

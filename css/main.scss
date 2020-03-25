@@ -329,7 +329,7 @@ $mblFeaturesCircleDim: 300px;
 .customSystemsCircle {
     @extend %featuresCircles;
     @include gradient(0deg, $gradientTeal1, $gradientTeal2);//0%
-    margin-left: -5vw;
+    margin-left: 3vw;
 }
 
 .analyticsCircle {
@@ -349,7 +349,7 @@ $mblFeaturesCircleDim: 300px;
 
 .customSystemsImage {
     margin-top: -290px;
-    margin-left: 15vw;
+    margin-left: 21vw;
 }
 
 .analyticsImage {
@@ -380,6 +380,22 @@ $mblFeaturesCircleDim: 300px;
 }
 
 .customTrackingFeatureCon {
+    .featureText {
+        p {
+            padding-bottom: $baseMargin * 5;
+        }
+    }
+}
+
+.systemsFeature {
+    .featureText {
+        h3 {
+            padding-top: $baseMargin * 4.5;
+        }
+    }
+}
+
+.customTrackingFeatureCon {
     .featureImageCon {
         margin-top: - $baseMargin * 5;
     }
@@ -399,7 +415,7 @@ $mblFeaturesCircleDim: 300px;
 
 .analyticsFeatureCon {
     h3 {
-        padding-top: $baseMargin * 7;
+        padding-top: $baseMargin * 10;
     }
 
     .ctaButton {
@@ -555,10 +571,19 @@ footer {
 @media screen and (min-width: $desktopWidth) {
     nav#desktopNav {
         display: block !important;
-        a {
-            font-size: 20px;
+        li {
+            a {
+                color: $teal;
+                font-size: 20px;
+            }
+            a:hover {
+                color: $gray;
+            }
         }
+        text-align: right;
     }
+
+    
 
     nav#mblNav {
         display: none;
@@ -709,7 +734,7 @@ footer {
     
     .customSystemsCircle {
         @extend %featuresCircles;
-        margin-left: -30vw;
+        margin-left: -40vw;
     }
     
     .analyticsCircle {
