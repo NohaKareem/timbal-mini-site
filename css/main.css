@@ -202,7 +202,7 @@ header #mblNavMenu ul li {
 .customSystemsCircle {
   background: rgba(37, 176, 172, 0.66);
   background: linear-gradient(0deg, rgba(37, 176, 172, 0.66), rgba(67, 232, 227, 0.48) 100%);
-  margin-left: -30vw;
+  margin-left: -5vw;
 }
 
 .analyticsCircle {
@@ -216,18 +216,23 @@ header #mblNavMenu ul li {
 }
 
 .customTrackingImage {
-  margin-top: -240px;
-  margin-left: 51vw;
+  margin-top: -226px;
+  margin-left: 33vw;
 }
 
 .customSystemsImage {
-  margin-top: -285px;
-  margin-left: -2vw;
+  margin-top: -290px;
+  margin-left: 15vw;
 }
 
 .analyticsImage {
   margin-top: -255px;
   margin-left: 15vw;
+}
+
+.customSystemsFeaturesCon {
+  padding-bottom: 30px;
+  padding-left: 20px;
 }
 
 #techStackGrid {

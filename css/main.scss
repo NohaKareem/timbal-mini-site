@@ -261,10 +261,6 @@ header {
     display: flex;
     justify-content: center;
 
-    // .overlay {
-    //     position: absolute;
-    // }
-    
     $mblMainCircleDim: 70vw; //~
     
     img.circle {
@@ -274,6 +270,8 @@ header {
         margin-top: $baseMargin * 4;
         margin-bottom: $baseMargin * 4;
     }
+
+    // padding-bottom: 1px;
 }
 
 #aboutMeText {
@@ -331,7 +329,7 @@ $mblFeaturesCircleDim: 300px;
 .customSystemsCircle {
     @extend %featuresCircles;
     @include gradient(0deg, $gradientTeal1, $gradientTeal2);//0%
-    margin-left: -30vw;
+    margin-left: -5vw;
 }
 
 .analyticsCircle {
@@ -345,18 +343,23 @@ $mblFeaturesCircleDim: 300px;
 }
 
 .customTrackingImage {
-    margin-top: -240px;
-    margin-left: 51vw;
+    margin-top: -226px;
+    margin-left: 33vw;
 }
 
 .customSystemsImage {
-    margin-top: -285px;
-    margin-left: -2vw;
+    margin-top: -290px;
+    margin-left: 15vw;
 }
 
 .analyticsImage {
     margin-top: -255px;
     margin-left: 15vw;
+}
+
+.customSystemsFeaturesCon {
+    padding-bottom: $baseMargin * 3;
+    padding-left: $baseMargin * 2;
 }
 
 // tech stack 
