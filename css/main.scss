@@ -68,18 +68,6 @@ p {
     // font-size: 4.5vw;
 }
 
-.feature {
-    h3 { 
-        padding-top: $baseMargin * 2;
-    }
-
-    p {
-        font-size: 20px;
-        margin: $baseMargin * 3 auto;
-        padding-bottom: $baseMargin * 3;
-    }
-}
-
 h1, h3, .sectionHeading { 
     color: $teal;
     margin-top: $baseMargin * 4;
@@ -385,8 +373,39 @@ $mblFeaturesCircleDim: 300px;
             order: 6;
         }
     }
+
+    .featureImageCon {
+        margin-top: - $baseMargin * 5;
+    }
 }
 
+.customTrackingFeatureCon {
+    .featureImageCon {
+        margin-top: - $baseMargin * 5;
+    }
+}
+
+.feature {
+    h3 { 
+        padding-top: $baseMargin * 2;
+    }
+
+    p {
+        font-size: 20px;
+        margin: $baseMargin * 3 auto;
+        padding-bottom: $baseMargin * 3;
+    }
+}
+
+.analyticsFeatureCon {
+    h3 {
+        padding-top: $baseMargin * 7;
+    }
+
+    .ctaButton {
+        margin-top: $baseMargin * 0.5;
+    }
+}
 
 // tech stack 
 #techStackGrid {

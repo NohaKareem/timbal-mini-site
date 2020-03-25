@@ -19,15 +19,6 @@ p {
   margin-bottom: 20px;
 }
 
-.feature h3 {
-  padding-top: 20px;
-}
-.feature p {
-  font-size: 20px;
-  margin: 30px auto;
-  padding-bottom: 30px;
-}
-
 h1, h3, .sectionHeading {
   color: #52BCB9;
   margin-top: 40px;
@@ -253,6 +244,29 @@ header #mblNavMenu ul li {
 }
 .analyticsFeature .feature .ctaButtonSmall {
   order: 6;
+}
+.analyticsFeature .featureImageCon {
+  margin-top: -50px;
+}
+
+.customTrackingFeatureCon .featureImageCon {
+  margin-top: -50px;
+}
+
+.feature h3 {
+  padding-top: 20px;
+}
+.feature p {
+  font-size: 20px;
+  margin: 30px auto;
+  padding-bottom: 30px;
+}
+
+.analyticsFeatureCon h3 {
+  padding-top: 70px;
+}
+.analyticsFeatureCon .ctaButton {
+  margin-top: 5px;
 }
 
 #techStackGrid {
