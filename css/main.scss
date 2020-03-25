@@ -68,6 +68,12 @@ p {
     // font-size: 4.5vw;
 }
 
+.feature p {
+    font-size: 20px;
+    margin: $baseMargin * 3 auto;
+    padding-bottom: $baseMargin * 3;
+}
+
 h1, h3, .sectionHeading { 
     color: $teal;
     margin-top: $baseMargin * 4;

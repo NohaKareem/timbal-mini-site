@@ -19,6 +19,12 @@ p {
   margin-bottom: 20px;
 }
 
+.feature p {
+  font-size: 20px;
+  margin: 30px auto;
+  padding-bottom: 30px;
+}
+
 h1, h3, .sectionHeading {
   color: #52BCB9;
   margin-top: 40px;
