@@ -19,6 +19,9 @@ p {
   margin-bottom: 20px;
 }
 
+.feature h3 {
+  padding-top: 20px;
+}
 .feature p {
   font-size: 20px;
   margin: 30px auto;
@@ -241,6 +244,17 @@ header #mblNavMenu ul li {
   padding-left: 20px;
 }
 
+.analyticsFeature {
+  display: flex;
+  flex-direction: column;
+}
+.analyticsFeature .feature {
+  display: contents;
+}
+.analyticsFeature .feature .ctaButtonSmall {
+  order: 6;
+}
+
 #techStackGrid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -460,6 +474,17 @@ footer #signUpLink {
 
   .analyticsCircle {
     margin-left: 53vw;
+  }
+
+  .analyticsFeature {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .analyticsFeature .feature {
+    display: contents;
+  }
+  .analyticsFeature .feature .ctaButtonSmall {
+    order: 6;
   }
 }
 

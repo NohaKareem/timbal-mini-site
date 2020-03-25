@@ -68,10 +68,16 @@ p {
     // font-size: 4.5vw;
 }
 
-.feature p {
-    font-size: 20px;
-    margin: $baseMargin * 3 auto;
-    padding-bottom: $baseMargin * 3;
+.feature {
+    h3 { 
+        padding-top: $baseMargin * 2;
+    }
+
+    p {
+        font-size: 20px;
+        margin: $baseMargin * 3 auto;
+        padding-bottom: $baseMargin * 3;
+    }
 }
 
 h1, h3, .sectionHeading { 
@@ -367,6 +373,20 @@ $mblFeaturesCircleDim: 300px;
     padding-bottom: $baseMargin * 3;
     padding-left: $baseMargin * 2;
 }
+
+.analyticsFeature {
+    display: flex;
+    flex-direction: column;
+
+    .feature {
+        display: contents;
+
+        .ctaButtonSmall {
+            order: 6;
+        }
+    }
+}
+
 
 // tech stack 
 #techStackGrid {
@@ -677,5 +697,19 @@ footer {
         @extend %featuresCircles;
         margin-left: 53vw;
     }
+ 
+    .analyticsFeature {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        // flex-direction: column;
     
+        .feature {
+            display: contents;
+    
+            .ctaButtonSmall {
+                order: 6;
+            }
+        }
+    }
+
 }
