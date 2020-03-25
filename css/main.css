@@ -10,6 +10,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  margin: auto 30px !important;
+}
+
 p {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -53,6 +57,23 @@ header nav#desktopNav a {
 }
 header nav#desktopNav ul li {
   display: inline;
+}
+header #mblNavBurger {
+  transition: all 250ms ease-in-out;
+  position: fixed;
+  background-color: #F0F0F0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin-left: -17px;
+  margin-top: -5px;
+}
+header #mblNavBurger.animate {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 header #mblNavMenu {
   margin: 30px;
@@ -126,7 +147,7 @@ header #mblNavMenu ul li {
   color: white;
   width: 70vw;
   height: 70vw;
-  font-size: 40px;
+  font-size: 8vw;
 }
 
 #aboutMeCircles {
@@ -139,6 +160,14 @@ header #mblNavMenu ul li {
   object-fit: cover;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+#aboutMeText a {
+  color: #52BCB9;
+  text-decoration: #52BCB9;
+}
+#aboutMeText a:hover {
+  color: #707070;
 }
 
 .ctaButton {
@@ -278,6 +307,23 @@ header #mblNavMenu ul li {
 #aboutMeGrid {
   display: grid;
   grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+footer {
+  font-size: 15px;
+  margin: 10px 30px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+footer a {
+  text-decoration: none;
+  color: #52BCB9;
+}
+footer a:hover {
+  color: #707070;
+}
+footer #signUpLink {
+  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {

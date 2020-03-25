@@ -23,25 +23,25 @@
 
 <body>
     <header>
-        <section>
+        <section id="navSection">
             <h2 class="hidden">Navigation</h2>
             <nav id="mblNav">
-                <a href="#" id="mblNavBurger"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-bars" aria-hidden="true" id="mblNavBurger"></i></a>
                 <div id="mblNavMenu" class="hidden">
                     <h2 class="hidden">Mobile navigation menu</h2>
                     <ul>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Tech Stack</a></li>
-                        <li><a href="#">About Me</a></li>
+                        <li><a href="#featuresCon">Features</a></li>
+                        <li><a href="#techStackCon">Tech Stack</a></li>
+                        <li><a href="#aboutMeCon">About Me</a></li>
                     </ul>
                 </div>
             </nav>
             <nav id="desktopNav">
                 <h2 class="hidden">Desktop navigation menu</h2>
                 <ul>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Tech Stack</a></li>
-                    <li><a href="#">About Me</a></li>
+                    <li><a href="#featuresCon">Features</a></li>
+                    <li><a href="#techStackCon">Tech Stack</a></li>
+                    <li><a href="#aboutMeCon">About Me</a></li>
                 </ul>
             </nav>
         </section>
@@ -136,7 +136,7 @@
                 </div>
             </section>
         </section>
-        <section id="tectStackCon">
+        <section id="techStackCon">
             <h2 class="sectionHeading">Tech Stack</h2>
             <div id="techStackGrid">
                 <img src="assets/images/tech/mongo.png" alt="mongo logo">
@@ -149,7 +149,7 @@
                 <img src="assets/images/tech/github.png" alt="github logo" class="adjustHeight">
             </div>
         </section>
-        <section>
+        <section id="aboutMeCon">
             <h2 class="sectionHeading">About Me</h2>
             <div id="aboutMeGrid">
                 <div id="aboutMeCirclesCon">
@@ -171,13 +171,14 @@
                     </div>
                 </div>
                 <p id="aboutMeText">
-                    Hello, I'm Noha Kareem. I'm an IMS student and computer science graduate who loves data, learning and building thoughtful and impactful projects. I started timbal through a spreadsheet over five years ago and am still fascinated by time-tracking today! If you're interested in timbal, feel free to contact me or sign-up to learn more!
+                    Hello, I'm Noha Kareem. I'm an IMS student and computer science graduate who loves data, learning and building thoughtful and impactful projects. I started timbal through a spreadsheet over five years ago and am still fascinated by time-tracking today! If you're interested in timbal, feel free to <a href="mailto:noha.k.kareem@gmail.com?Subject=Hello">contact me</a> or <a href="https://forms.gle/YU9vv9zMp49yt2cWA">sign-up</a> to learn more!
                 </p>
             </div>
         </section>
     </main>
     <footer>
-        
+        <a href="mailto:noha.k.kareem@gmail.com?Subject=Hello">contact</a>
+        <a href="https://forms.gle/YU9vv9zMp49yt2cWA" id="signUpLink">sign-up</a>
     </footer>
     <script src="js/main.js"></script>
 </body>

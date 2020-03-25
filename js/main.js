@@ -23,8 +23,9 @@
 		emptyLink.addEventListener("click", preventDefaultBehavior);
 	});
 
-	// show nav menu on click 
+	// apply burger menu animation and show nav menu on burger icon click  
 	mblNavBurger.addEventListener("click", () => {
+		mblNavBurger.classList.toggle('animate');
 		mblNavMenu.classList.toggle('hidden');
 	});
 
