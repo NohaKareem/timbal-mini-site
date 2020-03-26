@@ -372,6 +372,7 @@ footer {
   margin: 10px 30px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 10px;
 }
 footer a {
   text-decoration: none;
