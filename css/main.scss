@@ -2,8 +2,9 @@
 
 $desktopWidth: 768px;
 $grayWhite: #F0F0F0;
-
 $baseMargin: 10px;
+$topMargin: $baseMargin * 0.5;
+
 $bodyFontSize: 25px;
 $h3FontSize: 37px;
 $h1FontSize: 50px;
@@ -98,6 +99,7 @@ header {
     }
 
     nav#desktopNav {
+        margin-top: - $topMargin * 6;
         display: none; // hide in mobile mode
         a {
             text-decoration: none;
@@ -109,8 +111,6 @@ header {
             }
         }
     }
-
-    $topMargin: $baseMargin * 0.5;
 
     %headerStyles {
         margin-top: - $topMargin;

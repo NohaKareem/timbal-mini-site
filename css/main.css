@@ -49,6 +49,7 @@ header nav a:hover {
   color: #707070;
 }
 header nav#desktopNav {
+  margin-top: -30px;
   display: none;
 }
 header nav#desktopNav a {
