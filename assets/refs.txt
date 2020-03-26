@@ -2,3 +2,5 @@
 * neumorphism css https://www.youtube.com/watch?v=KlSLdEB3lzg
 * neumorphism design xd https://www.youtube.com/watch?v=G9yCM_rnC-w
 * remove horizontal scroll https://stackoverflow.com/a/4405976
+* latest gsap CDNs https://greensock.com/docs/v3/Installation#CDN
+* registering a greensock (text) plugin https://greensock.com/docs/v3/Plugins/TextPlugin

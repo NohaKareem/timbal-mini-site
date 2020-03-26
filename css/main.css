@@ -504,8 +504,14 @@ footer #signUpLink {
     height: 40vw;
   }
 
+  .customTrackingImage {
+    margin-top: -22vh;
+    margin-left: 32vw;
+  }
+
   .customTrackingCircle {
-    margin-left: 30vw;
+    margin-top: -9vh;
+    margin-left: 23vw;
   }
 
   .customSystemsCircle {

@@ -42,14 +42,23 @@
 		// animation for custom variables feature
 		// tl.to(customVarsAnimatedText, 10,{ text: {value: "hi"}, ease: "Power0.easeIn"});
 		// ~gsap.config({nullTargetWarn:false});//https://greensock.com/forums/topic/22836-gsap-3-warnings/
-		tl.to('#customVarsAnimatedText', {
-			duration: 2,
-			text: {
-				value: "This is the new text",
-				delimiter: " "
-			},
-			ease: "none"
-		});
+		// gsap.to(customVarsAnimatedText, {duration: 2, text: "This is the new text", ease: "none"});
+		gsap.registerPlugin(TextPlugin);
+		customVarsText.forEach(activityText => {
+			tl.to(customVarsAnimatedText, {
+				text: " "
+			}).to(customVarsAnimatedText, {
+				duration: 2.5,
+				text: activityText
+				// {
+					// value: "This is the new text"
+					// ,
+					// delimiter: " "
+				// },
+				,
+				ease: "none"
+			});
+		})
 		// customVarsText.forEach(textToAnimate => {
 		// 	tl.to(customVarsAnimatedText, {
 		// 		duration: 10, 
