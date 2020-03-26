@@ -512,7 +512,6 @@ footer #signUpLink {
 
   .customTrackingFeatureCon .featureText p {
     padding-bottom: 50px;
-    width: 35vw;
   }
 
   #aboutMeCircles img.circle {
@@ -574,7 +573,7 @@ footer #signUpLink {
   }
 
   .featureText p {
-    font-size: 2.025vw;
+    font-size: 3vw;
   }
 
   .feature {
@@ -610,10 +609,13 @@ footer #signUpLink {
   }
 
   .featureText {
-    width: 35vw;
+    width: 43vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .featureText h3 {
+    font-size: 5vw;
   }
 
   .customSystemsCircle {
@@ -640,7 +642,7 @@ footer #signUpLink {
   .analyticsFeature .feature .ctaButtonSmall {
     order: 6;
     margin-top: -10px;
-    font-size: 2.25vw;
+    font-size: 3vw;
   }
   .analyticsFeature .analyticsImage {
     margin-left: 12vw;

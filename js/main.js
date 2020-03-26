@@ -3,15 +3,24 @@
 	"use strict";
 
 	let emptyLinks = document.querySelectorAll('a[href="#"]');
+	let navLinks = document.querySelectorAll('nav ul li a');
 	let mblNavBurger = document.querySelector('#mblNavBurger');
 	let mblNavMenu = document.querySelector('#mblNavMenu');
 	// console.log(emptyLinks)
 
 	// ~green sock smooth scroll effect for navigation links
+	navLinks.forEach(navLink => {
+		addEventListener("click", smoothScroll);
+	});
+
 	function smoothScroll(e) {
-		e.preventDefault();
-		// var href = e.currentTarget.dataset.url;
-		// TweenLite.to(window, 1, { scrollTo: { y: "#" + href, offsetY: 3, autoKill: false } });
+		// e.preventDefault();
+		// console.log(e.currentTarget.getAttribute("href"))
+		// console.log(this)
+		// console.log(this.href)
+		// console.log(e.currentTarget)
+		var href = e.currentTarget.dataset.url;
+		TweenLite.to(window, 1, { scrollTo: { y: "#" + href, offsetY: 3, autoKill: false } });
 	}
 
 	// prevent default behavior for links
@@ -30,7 +39,6 @@
 	});
 
 	function animateText() {
-		console.log('~in animateText')
 		let customVarsAnimatedText = document.querySelector('#customVarsAnimatedText');
 		let systemsAnimatedText = document.querySelector('#systemsAnimatedText');
 

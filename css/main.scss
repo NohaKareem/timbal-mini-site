@@ -729,7 +729,7 @@ footer {
         .featureText {
             p {
                 padding-bottom: $baseMargin * 5;
-                width: 35vw;
+                // width: 35vw;
             }
         }
     }
@@ -811,7 +811,8 @@ footer {
 
     .featureText {
         p {
-            font-size: $desktopMainCircleFontSize * 0.45;
+            // font-size: $desktopMainCircleFontSize * 0.45;
+            font-size: 3vw;
         }
     }
     
@@ -856,10 +857,13 @@ footer {
     }
 
     .featureText {
-        width: 35vw;
+        width: 43vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        h3 {
+            font-size: 5vw;
+        }
     }
 
     .customSystemsCircle {
@@ -890,7 +894,7 @@ footer {
             .ctaButtonSmall {
                 order: 6;
                 margin-top: - $baseMargin;
-                font-size: $desktopMainCircleFontSize * 0.5;
+                font-size: 3vw;//$desktopMainCircleFontSize * 0.5;
             }
         }
 
