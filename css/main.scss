@@ -120,8 +120,8 @@ header {
         border-radius: 50%;
         display: flex;
         justify-content: center;
-        margin-left: -17px;
-        margin-top: - $baseMargin * 0.5;
+        margin-left: 83vw;
+         margin-top: - $baseMargin * 0.5;
     }
 
     // css animation
@@ -661,7 +661,9 @@ footer {
     }
 
     #aboutMeCircles {
-        $largeFaFontSize: 51px;
+        $largeFaFontSize: 5vw;
+        $mediumFaFontSize: 2.5vw;
+        $smallFaFontSize: 1.5vw;
 
         img.circle {
             width: $desktopAboutMeCircleDim;
@@ -670,6 +672,10 @@ footer {
 
         .overlay {
             position: absolute;
+        }
+
+        .fa {
+            margin-top: 6px;
         }
 
         .github {
@@ -681,9 +687,9 @@ footer {
         }
 
         .stackoverflow {
-            width: $desktopAboutMeCircleDim / 6.5;
-            height: $desktopAboutMeCircleDim / 6.5;
-            font-size: 27px;
+            width: $desktopAboutMeCircleDim / 4.5;
+            height: $desktopAboutMeCircleDim / 4.5;
+            font-size: $mediumFaFontSize;
 
             margin-top: $desktopAboutMeCircleDim / 10;
             margin-left: -14vw;
@@ -695,12 +701,13 @@ footer {
             height: $desktopAboutMeCircleDim / 3;
             margin-top: $desktopAboutMeCircleDim / 7;
             margin-left: 16vw;
+            font-size: $largeFaFontSize;
         }
 
         .medium {
             width: $desktopAboutMeCircleDim / 8;
             height: $desktopAboutMeCircleDim / 8;
-            font-size: 27px;
+            font-size: $smallFaFontSize;
             margin-top: $desktopAboutMeCircleDim / 1.25;
             margin-left: 26vw;
         }
