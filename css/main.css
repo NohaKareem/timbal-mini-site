@@ -58,14 +58,20 @@ header nav#desktopNav a {
 header nav#desktopNav ul li {
   display: inline;
 }
+header #logoImage, header #mblNavBurger {
+  margin-top: -5px;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+}
 header #mblNavBurger {
   transition: all 250ms ease-in-out;
   position: fixed;
-  display: flex;
-  justify-content: center;
   margin-left: 83vw;
-  margin-top: -5px;
-  z-index: 4;
+  margin-top: -30px;
+}
+header #logoImage {
+  height: 5vh;
 }
 header #mblNavBurger.animate {
   -webkit-transform: rotate(90deg);

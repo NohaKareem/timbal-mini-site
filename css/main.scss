@@ -110,15 +110,27 @@ header {
         }
     }
 
+    $topMargin: $baseMargin * 0.5;
+
+    %headerStyles {
+        margin-top: - $topMargin;
+        z-index: 4;
+        display: flex;
+        justify-content: center;
+    }
+
     // burger animation 
     #mblNavBurger {
         transition: all 250ms ease-in-out;
         position: fixed;
-        display: flex;
-        justify-content: center;
         margin-left: 83vw;
-         margin-top: - $baseMargin * 0.5;
-         z-index: 4;
+        @extend %headerStyles;
+        margin-top: - $topMargin * 6;
+    }
+
+    #logoImage {
+        height: 5vh;
+        @extend %headerStyles;
     }
 
     // css animation
