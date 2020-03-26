@@ -456,34 +456,44 @@ footer #signUpLink {
     margin-left: 20px;
   }
 
-  img.circle {
-    width: 250px;
-    height: 250px;
-  }
-
   .customTrackingFeatureCon .featureText p {
     padding-bottom: 50px;
     width: 35vw;
   }
 
+  #aboutMeCircles img.circle {
+    width: 20vw;
+    height: 20vw;
+  }
+  #aboutMeCircles .overlay {
+    position: absolute;
+  }
   #aboutMeCircles .github {
-    width: 100px;
-    height: 100px;
-    margin-top: 250px;
-    margin-left: -333.3333333333px;
+    width: 6.6666666667vw;
+    height: 6.6666666667vw;
+    margin-top: 13.8461538462vw;
+    margin-left: -20vw;
+    font-size: 51px;
   }
   #aboutMeCircles .stackoverflow {
-    width: 76.9230769231px;
-    height: 76.9230769231px;
+    width: 3.0769230769vw;
+    height: 3.0769230769vw;
     font-size: 27px;
-    margin-top: 50px;
+    margin-top: 2vw;
     margin-left: -14vw;
   }
   #aboutMeCircles .twitter {
-    width: 100px;
-    height: 100px;
-    margin-top: 50px;
-    margin-left: 25vw;
+    width: 6.6666666667vw;
+    height: 6.6666666667vw;
+    margin-top: 2.8571428571vw;
+    margin-left: 16vw;
+  }
+  #aboutMeCircles .medium {
+    width: 2.5vw;
+    height: 2.5vw;
+    font-size: 27px;
+    margin-top: 16vw;
+    margin-left: 26vw;
   }
 
   .featureText p {
@@ -512,6 +522,11 @@ footer #signUpLink {
   .customTrackingCircle {
     margin-top: -9vh;
     margin-left: 23vw;
+  }
+
+  .systemsFeature {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
   .customSystemsCircle {

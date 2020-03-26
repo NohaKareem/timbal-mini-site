@@ -268,8 +268,6 @@ header {
     }
 }
 
-$largeFaFontSize: 51px;
-
 .ctaButton {
     border-radius: $baseMargin * 5;
     padding: $baseMargin;
@@ -649,12 +647,9 @@ footer {
 
     // about me
     // $mblMainCircleDim: 70vw;
-    $desktopAboutMeCircleDim: 500px; //60vw;
+    $desktopAboutMeCircleDim: 20vw;//500px; //60vw;
 
-    img.circle {
-        width: $desktopAboutMeCircleDim / 2;
-        height: $desktopAboutMeCircleDim / 2;
-    }
+    
 
     .customTrackingFeatureCon {
         .featureText {
@@ -666,11 +661,23 @@ footer {
     }
 
     #aboutMeCircles {
+        $largeFaFontSize: 51px;
+
+        img.circle {
+            width: $desktopAboutMeCircleDim;
+            height: $desktopAboutMeCircleDim;
+        }
+
+        .overlay {
+            position: absolute;
+        }
+
         .github {
-            width: $desktopAboutMeCircleDim / 5;
-            height: $desktopAboutMeCircleDim / 5;
-            margin-top: $desktopAboutMeCircleDim - $desktopAboutMeCircleDim / 2;
-            margin-left: -$desktopAboutMeCircleDim / 1.5;
+            width: $desktopAboutMeCircleDim / 3;
+            height: $desktopAboutMeCircleDim / 3;
+            margin-top: $desktopAboutMeCircleDim - $desktopAboutMeCircleDim / 3.25;
+            margin-left: -$desktopAboutMeCircleDim;
+            font-size: $largeFaFontSize;
         }
 
         .stackoverflow {
@@ -684,10 +691,18 @@ footer {
         }
         
         .twitter {
-            width: $desktopAboutMeCircleDim / 5;
-            height: $desktopAboutMeCircleDim / 5;
-            margin-top: $desktopAboutMeCircleDim / 10;
-            margin-left: 25vw;
+            width: $desktopAboutMeCircleDim / 3;
+            height: $desktopAboutMeCircleDim / 3;
+            margin-top: $desktopAboutMeCircleDim / 7;
+            margin-left: 16vw;
+        }
+
+        .medium {
+            width: $desktopAboutMeCircleDim / 8;
+            height: $desktopAboutMeCircleDim / 8;
+            font-size: 27px;
+            margin-top: $desktopAboutMeCircleDim / 1.25;
+            margin-left: 26vw;
         }
     }
 
@@ -725,6 +740,11 @@ footer {
     }
     
     // custom systems feature
+    .systemsFeature {
+        display: grid;
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+    }
+
     .customSystemsCircle {
         @extend %featuresCircles;
         margin-left: -40vw;
