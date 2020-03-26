@@ -694,25 +694,13 @@ footer {
         }
     }
 
-    // #techStackGrid {
-    //     .adjustWidth {
-    //         width: 150px;
-    //     }
-    //     .gulp.adjustHeight {
-    //         width: 150px;
-    //         height: auto;
-    //     }
-    // }
-
     #techStackGrid {
-        // mobile styles
         img {
-            height: 80px//18vh;
-            // width: 100px;
+            height: 80px;
         }
         
         .adjustHeight {
-            height: 80px;//18vh;
+            height: 80px;
         }
 
         .mongo {
@@ -730,7 +718,6 @@ footer {
             width: 15vw;
             height: auto;
             padding-left: $baseMargin * 1.15;
-            // padding-right: $baseMargin * 1.5;
         }
     }
 
