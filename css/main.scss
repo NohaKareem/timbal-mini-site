@@ -122,6 +122,7 @@ header {
         justify-content: center;
         margin-left: 83vw;
          margin-top: - $baseMargin * 0.5;
+         z-index: 4;
     }
 
     // css animation
@@ -131,13 +132,21 @@ header {
 
     #mblNavMenu {
         margin: $baseMargin * 3;
-
         ul {
            li {
             text-align: center;
             margin-bottom: $baseMargin * 2;
            }
         }
+
+        // always on top
+        position: fixed;
+        background-color: $grayWhite;
+        z-index: 3;
+        width: 100vw;
+        margin-left: -$baseMargin;
+        padding-top: $baseMargin * 3;
+        margin-top: - $baseMargin * 2;
     }
 }
 

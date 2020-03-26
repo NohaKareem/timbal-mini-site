@@ -69,6 +69,7 @@ header #mblNavBurger {
   justify-content: center;
   margin-left: 83vw;
   margin-top: -5px;
+  z-index: 4;
 }
 header #mblNavBurger.animate {
   -webkit-transform: rotate(90deg);
@@ -77,6 +78,13 @@ header #mblNavBurger.animate {
 }
 header #mblNavMenu {
   margin: 30px;
+  position: fixed;
+  background-color: #F0F0F0;
+  z-index: 3;
+  width: 100vw;
+  margin-left: -10px;
+  padding-top: 30px;
+  margin-top: -20px;
 }
 header #mblNavMenu ul li {
   text-align: center;
