@@ -296,15 +296,24 @@ header #mblNavMenu ul li {
   justify-items: center;
 }
 #techStackGrid img {
-  height: 80px;
-}
-#techStackGrid .adjustHeight {
   height: 70px;
 }
+#techStackGrid .adjustHeight {
+  height: 50px;
+}
 #techStackGrid .adjustWidth {
-  width: 150px;
+  width: 130px;
   height: auto;
-  margin-left: -45px;
+  padding-left: 50px;
+  margin-left: -49.5px;
+}
+#techStackGrid .vue.adjustHeight {
+  padding-left: 25px;
+}
+#techStackGrid .gulp.adjustHeight {
+  width: 130px;
+  height: auto;
+  padding-left: 11.5px;
 }
 
 #aboutMeCircles .medium, #aboutMeCircles .twitter, #aboutMeCircles .stackoverflow, #aboutMeCircles .github {
@@ -365,7 +374,7 @@ header #mblNavMenu ul li {
 
 #aboutMeGrid {
   display: grid;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: auto auto;
 }
 #aboutMeGrid #aboutMeTextCon {
   margin-bottom: 10px;
@@ -478,6 +487,27 @@ footer #signUpLink {
   }
   #heroCircles .mainCircle p {
     margin-left: 20px;
+  }
+
+  #techStackGrid img {
+    height: 80px;
+  }
+  #techStackGrid .adjustHeight {
+    height: 80px;
+  }
+  #techStackGrid .mongo {
+    height: 100px;
+  }
+  #techStackGrid .adjustWidth {
+    width: 18vw;
+    height: auto;
+    padding-left: 50px;
+    margin-left: -49.5px;
+  }
+  #techStackGrid .gulp.adjustHeight, #techStackGrid .express {
+    width: 15vw;
+    height: auto;
+    padding-left: 11.5px;
   }
 
   .customTrackingFeatureCon .featureText p {

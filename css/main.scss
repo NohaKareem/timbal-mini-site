@@ -433,18 +433,33 @@ $mblFeaturesCircleDim: 300px;//50vw;//
 
     // mobile styles
     img {
-        height: 80px;
+        height: 70px;
         // width: 100px;
     }
     
     .adjustHeight {
-        height: 70px;
+        height: 50px;
     }
 
     .adjustWidth {
-        width: 150px;
+        width: 130px;
         height: auto;
-        margin-left: $baseMargin * -4.5;
+        padding-left: $baseMargin * 5;
+        margin-left: $baseMargin * -4.95;
+    }
+        
+    .vue.adjustHeight {
+        // width: 130px;
+        // height: auto;
+        padding-left: $baseMargin * 2.5;
+        // padding-right: $baseMargin * 1.5;
+    }
+
+    .gulp.adjustHeight {
+        width: 130px;
+        height: auto;
+        padding-left: $baseMargin * 1.15;
+        // padding-right: $baseMargin * 1.5;
     }
 }
 
@@ -538,7 +553,7 @@ $mblFeaturesCircleDim: 300px;//50vw;//
 
 #aboutMeGrid {
     display: grid;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: auto auto;//2fr 1fr
     
     #aboutMeTextCon {
         margin-bottom: 10px;
@@ -676,6 +691,46 @@ footer {
             p {
                 margin-left: $baseMargin * 2;
             }
+        }
+    }
+
+    // #techStackGrid {
+    //     .adjustWidth {
+    //         width: 150px;
+    //     }
+    //     .gulp.adjustHeight {
+    //         width: 150px;
+    //         height: auto;
+    //     }
+    // }
+
+    #techStackGrid {
+        // mobile styles
+        img {
+            height: 80px//18vh;
+            // width: 100px;
+        }
+        
+        .adjustHeight {
+            height: 80px;//18vh;
+        }
+
+        .mongo {
+            height: 100px;
+        }
+    
+        .adjustWidth {
+            width: 18vw;
+            height: auto;
+            padding-left: $baseMargin * 5;
+            margin-left: $baseMargin * -4.95;
+        }
+            
+        .gulp.adjustHeight, .express {
+            width: 15vw;
+            height: auto;
+            padding-left: $baseMargin * 1.15;
+            // padding-right: $baseMargin * 1.5;
         }
     }
 
