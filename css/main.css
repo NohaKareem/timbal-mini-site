@@ -61,10 +61,6 @@ header nav#desktopNav ul li {
 header #mblNavBurger {
   transition: all 250ms ease-in-out;
   position: fixed;
-  background-color: #F0F0F0;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   margin-left: 83vw;

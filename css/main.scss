@@ -114,10 +114,6 @@ header {
     #mblNavBurger {
         transition: all 250ms ease-in-out;
         position: fixed;
-        background-color: $grayWhite;
-        width: 28px;
-        height: 28px;
-        border-radius: 50%;
         display: flex;
         justify-content: center;
         margin-left: 83vw;
