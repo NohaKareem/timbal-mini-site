@@ -583,8 +583,6 @@ footer {
         text-align: right;
     }
 
-    
-
     nav#mblNav {
         display: none;
     }
@@ -593,26 +591,35 @@ footer {
         display: grid;
         grid-template-columns: 1.5fr 1fr;
     }
+
+    $desktopMainCircleFontSize: 4.5vw;
     
     #heroText {
         text-align: left;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+        align-items: flex-start;
+        margin-top: $baseMargin * 6;
+        // display: grid;
+        // grid-template-rows: 1fr 0.25fr;
+        // column-gap: $baseMargin * 5;
+
         p {
             // font-size: 7.25vh;//~~~
             // margin-top: $baseMargin * 6;
-            font-size: 50px;//27px;
+            font-size: $desktopMainCircleFontSize * 0.65;//50px;//27px;
         }
     }
 
     .ctaButton {
-        font-size: 30px;
+        margin-top: $baseMargin * 0.2;
+        font-size: $desktopMainCircleFontSize * 0.65;
+        align-self: flex-start;
     }
-    
+
     // hero section - circles
-    $desktopMainCircleDim: 600px;//40vw; //40vw
+    $desktopMainCircleDim: 40vw;//600px;//40vw; //40vw
     
     #heroCircles {
         .topRight {
@@ -660,7 +667,7 @@ footer {
             width: $desktopMainCircleDim;    
             height: $desktopMainCircleDim; //300px
             // font-size: 4.5vw;
-            font-size: 65px;
+            font-size: $desktopMainCircleFontSize;//65px;
 
             p {
                 margin-left: $baseMargin * 2;
@@ -675,6 +682,15 @@ footer {
     img.circle {
         width: $desktopAboutMeCircleDim / 2;
         height: $desktopAboutMeCircleDim / 2;
+    }
+
+    .customTrackingFeatureCon {
+        .featureText {
+            p {
+                padding-bottom: $baseMargin * 5;
+                width: 35vw;
+            }
+        }
     }
 
     #aboutMeCircles {
@@ -710,6 +726,12 @@ footer {
         //     margin-top: $desktopAboutMeCircleDim / 2;
         //     margin-left: 7vw;
         // }
+    }
+
+    .featureText {
+        p {
+            font-size: $desktopMainCircleFontSize * 0.45;
+        }
     }
 
     #aboutMeGrid {
