@@ -10,13 +10,13 @@ $h1FontSize: 50px;
 $mainCricleFontSize: 8vw;//40px;
 
 $teal: #52BCB9;//25b0ac;
-$gradientTeal1: rgba(37,176,172,0.66);// ~
+$gradientTeal1: rgba(37,176,172,0.66);
 $gradientTeal2:  rgba(67,232,227,0.48);
 $translucentTeal: rgba($teal, 0.48); //#25b0ac
 $blushPink: #F4B582;
 $melon: #FFD344;
 $gray: #707070;
-$translucentGray: rgba($gray, 0.14); //~
+$translucentGray: rgba($gray, 0.14); 
 
 @mixin gradient($angle, $color1, $color2) {
     background: $color1;
@@ -49,7 +49,6 @@ $translucentGray: rgba($gray, 0.14); //~
 body {
     font-family: 'Quattrocento Sans', sans-serif;
     color: $gray;
-    // font-size: 6.5vw;//~
     font-size: $bodyFontSize;
     background-color: $grayWhite;
 
@@ -63,20 +62,15 @@ main {
 p {
     margin-top: $baseMargin;
     margin-bottom: $baseMargin * 2;
-    
-    // mobile styles
-    // font-size: 4.5vw;
 }
 
 h1, h3, .sectionHeading { 
     color: $teal;
     margin-top: $baseMargin * 4;
-    // font-weight: bold;
 }
 
 h1, .sectionHeading {
     text-align: center;
-    // font-size: 9.5vw;//~#
     font-size: $h1FontSize;
 }
 
@@ -136,17 +130,7 @@ header {
     }
 
     #mblNavMenu {
-        // position: fixed;
-        // background-color: $grayWhite;
-
         margin: $baseMargin * 3;
-
-        // background-color: $grayWhite;
-        // margin-top: -18px; //~~~
-        // position: fixed;//~
-        // width: 100vw;
-        // margin-left: -5vw;
-        // padding-top: $baseMargin * 2;
 
         ul {
            li {
@@ -313,7 +297,7 @@ $largeFaFontSize: 51px;
 }
 
 // features section 
-$mblFeaturesCircleDim: 300px;
+$mblFeaturesCircleDim: 300px;//50vw;//
 
 %featuresCircles {
     width: $mblFeaturesCircleDim; 
@@ -328,13 +312,13 @@ $mblFeaturesCircleDim: 300px;
 
 .customSystemsCircle {
     @extend %featuresCircles;
-    @include gradient(0deg, $gradientTeal1, $gradientTeal2);//0%
+    @include gradient(0deg, $gradientTeal1, $gradientTeal2);
     margin-left: 3vw;
 }
 
 .analyticsCircle {
     @extend %featuresCircles;
-    @include gradient(180deg, transparentize($melon, 0.5), transparentize($blushPink,0.3)); 
+    @include gradient(180deg, transparentize($melon, 0.5), transparentize($blushPink, 0.3)); 
     margin-left: 53vw;
 }
 
@@ -459,7 +443,6 @@ $mblFeaturesCircleDim: 300px;
         a { 
             color: white;
         }
-        // @include softUiShadow();
      }
 
      %buttonIcon:hover {
@@ -544,15 +527,9 @@ $mblFeaturesCircleDim: 300px;
 footer {
     font-size: 15px;
     margin: $baseMargin $baseMargin * 3;
-    
-    // // display: flex;
-    // flex-direction: row;
-    
-    // justify-content: flex-start;
-    // align-content: flex-start;
+
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-
 
     a {
         text-decoration: none;
@@ -601,14 +578,9 @@ footer {
         justify-content: center;
         align-items: flex-start;
         margin-top: $baseMargin * 6;
-        // display: grid;
-        // grid-template-rows: 1fr 0.25fr;
-        // column-gap: $baseMargin * 5;
 
         p {
-            // font-size: 7.25vh;//~~~
-            // margin-top: $baseMargin * 6;
-            font-size: $desktopMainCircleFontSize * 0.65;//50px;//27px;
+            font-size: $desktopMainCircleFontSize * 0.65;//50px;//27px;7.25vh;//~~~
         }
     }
 
@@ -717,15 +689,6 @@ footer {
             margin-top: $desktopAboutMeCircleDim / 10;
             margin-left: 25vw;
         }
-
-        // .medium {
-        //     width: $desktopAboutMeCircleDim / 8;
-        //     height: $desktopAboutMeCircleDim / 8;
-        //     font-size: 27px;
-
-        //     margin-top: $desktopAboutMeCircleDim / 2;
-        //     margin-left: 7vw;
-        // }
     }
 
     .featureText {
@@ -751,7 +714,7 @@ footer {
     
     .customTrackingCircle {
         @extend %featuresCircles;
-        margin-left: 43vw;
+        margin-left: 30vw;
     }
     
     .customSystemsCircle {
@@ -767,8 +730,7 @@ footer {
     .analyticsFeature {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        // flex-direction: column;
-    
+
         .feature {
             display: initial;
     
