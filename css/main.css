@@ -515,6 +515,16 @@ footer #signUpLink {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: 1fr;
   }
+  #aboutMeGrid #aboutMeTextCon {
+    display: contents;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #aboutMeGrid #aboutMeTextCon span {
+    display: inline;
+  }
 
   .featureText p {
     font-size: 2.025vw;

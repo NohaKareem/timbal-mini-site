@@ -731,6 +731,18 @@ footer {
     #aboutMeGrid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-rows: 1fr;
+        
+        #aboutMeTextCon {
+            display: contents;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            span {
+                display: inline;
+            }
+        }
     }
 
     // features 
