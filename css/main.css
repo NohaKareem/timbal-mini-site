@@ -512,6 +512,7 @@ footer #signUpLink {
 
   #aboutMeGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: 1fr;
   }
 
   .featureText p {
@@ -529,22 +530,37 @@ footer #signUpLink {
   }
 
   .customTrackingImage {
-    margin-top: -22vh;
+    margin-top: -45vh;
     margin-left: 32vw;
   }
 
   .customTrackingCircle {
-    margin-top: -9vh;
+    margin-top: 16vh;
     margin-left: 23vw;
   }
 
   .systemsFeature {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: flex;
+    flex-direction: row;
+  }
+  .systemsFeature .featureText {
+    margin-left: 10vw;
+    order: 2;
+  }
+  .systemsFeature .customSystems {
+    order: 1;
+  }
+
+  .featureText {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .customSystemsCircle {
     margin-left: 3.5vw;
+    margin-top: 12vh;
   }
 
   .customSystemsImage {

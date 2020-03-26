@@ -730,6 +730,7 @@ footer {
 
     #aboutMeGrid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: 1fr;
     }
 
     // features 
@@ -751,30 +752,51 @@ footer {
     
     // custom tracking feature
     .customTrackingImage {
-        margin-top: -22vh;//-226px;
+        margin-top: -45vh;//-226px; //53vh
         margin-left: 32vw;
     }
 
     .customTrackingCircle {
         @extend %featuresCircles;
-        margin-top: -9vh; // 9vh
+        margin-top: 16vh; // 9vh
         margin-left: 23vw;
     }
     
     // custom systems feature
     .systemsFeature {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        // display: grid;
+        // grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        display: flex;
+        flex-direction: row;
+
+        .featureText {
+            margin-left: 10vw;
+            order: 2;
+        }
+    
+        .customSystems {
+            order: 1;
+        }
+    }
+
+    .featureText {
+        width: 35vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .customSystemsCircle {
         @extend %featuresCircles;
         margin-left: 3.5vw;
+        margin-top: 12vh;
     }
 
     .customSystemsImage {
         margin-top: -80vh;
         margin-left: 15vw;
+        // width: 20vw !important;
     }
 
     // analytics feature
