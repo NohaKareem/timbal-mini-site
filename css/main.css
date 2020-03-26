@@ -58,6 +58,7 @@ header nav#desktopNav a {
 }
 header nav#desktopNav ul li {
   display: inline;
+  margin-right: 50px;
 }
 header #logoImage, header #mblNavBurger {
   margin-top: -5px;
@@ -72,7 +73,7 @@ header #mblNavBurger {
   margin-top: -30px;
 }
 header #logoImage {
-  height: 5vh;
+  height: 6vh;
 }
 header #mblNavBurger.animate {
   -webkit-transform: rotate(90deg);
@@ -366,6 +367,9 @@ header #mblNavMenu ul li {
   display: grid;
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
+#aboutMeGrid #aboutMeTextCon {
+  margin-bottom: 10px;
+}
 
 footer {
   font-size: 15px;
@@ -386,6 +390,12 @@ footer #signUpLink {
 }
 
 @media screen and (min-width: 768px) {
+  h1, .sectionHeading {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 7vw;
+  }
+
   nav#desktopNav {
     display: block !important;
     text-align: right;
@@ -425,6 +435,9 @@ footer #signUpLink {
     align-self: flex-start;
   }
 
+  #heroCircles {
+    margin-left: 30px;
+  }
   #heroCircles .topRight {
     margin-left: 33.1vw;
     margin-top: -40vw;
@@ -527,6 +540,10 @@ footer #signUpLink {
     display: inline;
   }
 
+  .leftFeatureText {
+    margin-left: 30px;
+  }
+
   .featureText p {
     font-size: 2.025vw;
   }
@@ -581,7 +598,7 @@ footer #signUpLink {
   }
 
   .analyticsCircle {
-    margin-left: 53vw;
+    margin-left: 20vw;
   }
 
   .analyticsFeature {
@@ -593,6 +610,12 @@ footer #signUpLink {
   }
   .analyticsFeature .feature .ctaButtonSmall {
     order: 6;
+    margin-top: -10px;
+    font-size: 2.25vw;
+  }
+  .analyticsFeature .analyticsImage {
+    margin-left: 12vw;
+    margin-top: -55vh;
   }
 }
 

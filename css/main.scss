@@ -101,6 +101,7 @@ header {
     nav#desktopNav {
         margin-top: - $topMargin * 6;
         display: none; // hide in mobile mode
+
         a {
             text-decoration: none;
             color: $gray; 
@@ -108,6 +109,7 @@ header {
         ul {
             li {
                 display: inline;
+                margin-right: $baseMargin * 5;
             }
         }
     }
@@ -129,7 +131,7 @@ header {
     }
 
     #logoImage {
-        height: 5vh;
+        height: 6vh;
         @extend %headerStyles;
     }
 
@@ -537,6 +539,10 @@ $mblFeaturesCircleDim: 300px;//50vw;//
 #aboutMeGrid {
     display: grid;
     grid-template-rows: repeat(2, minmax(0, 1fr));
+    
+    #aboutMeTextCon {
+        margin-bottom: 10px;
+    }
 }
 
 footer {
@@ -558,11 +564,18 @@ footer {
         margin-left: auto;
     }
 
+    // margin-top: -70px;
     margin-bottom: $baseMargin;
 }
 
 // desktop
 @media screen and (min-width: $desktopWidth) {
+    h1, .sectionHeading {
+        margin-top: $baseMargin * 6;
+        margin-bottom: $baseMargin * 3;
+        font-size: 7vw;
+    }
+    
     nav#desktopNav {
         display: block !important;
         li {
@@ -611,6 +624,8 @@ footer {
     $desktopMainCircleDim: 40vw;//600px;//40vw; //40vw
     
     #heroCircles {
+        margin-left: $baseMargin * 3;
+
         .topRight {
             margin-left: $desktopMainCircleDim - $desktopMainCircleDim * 0.15 * 1.15;
             margin-top: - $desktopMainCircleDim;
@@ -748,6 +763,10 @@ footer {
     }
 
     // features 
+    .leftFeatureText {
+        margin-left: $baseMargin * 3;
+    }
+
     .featureText {
         p {
             font-size: $desktopMainCircleFontSize * 0.45;
@@ -816,7 +835,7 @@ footer {
     // analytics feature
     .analyticsCircle {
         @extend %featuresCircles;
-        margin-left: 53vw;
+        margin-left: 20vw;
     }
  
     .analyticsFeature {
@@ -828,7 +847,14 @@ footer {
     
             .ctaButtonSmall {
                 order: 6;
+                margin-top: - $baseMargin;
+                font-size: $desktopMainCircleFontSize * 0.5;
             }
+        }
+
+        .analyticsImage {
+            margin-left: 12vw;//-8.5vw;
+            margin-top: -55vh;
         }
     }
 
