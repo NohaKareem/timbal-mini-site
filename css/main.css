@@ -421,6 +421,7 @@ footer #signUpLink {
   nav#desktopNav {
     display: block !important;
     text-align: right;
+    margin-top: -3.5% !important;
   }
   nav#desktopNav li a {
     color: #52BCB9;

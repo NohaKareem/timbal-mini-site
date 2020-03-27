@@ -602,6 +602,13 @@ footer {
         font-size: 7vw;
     }
 
+    // #logoImage {
+    //     height: 5vw;//6vh;
+    //     margin-top: -2vw !important;
+    //     padding-top: 7vw;
+    // }
+
+
     nav#desktopNav {
         display: block !important;
         li {
@@ -614,6 +621,7 @@ footer {
             }
         }
         text-align: right;
+        margin-top: -3.5% !important;//-50px !important;
     }
 
     nav#mblNav {
