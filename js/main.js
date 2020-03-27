@@ -8,7 +8,7 @@
 	let mblNavMenu = document.querySelector('#mblNavMenu');
 	// console.log(emptyLinks)
 
-	// ~green sock smooth scroll effect for navigation links
+	// green sock smooth scroll effect for navigation links
 	navLinks.forEach(navLink => {
 		addEventListener("click", smoothScroll);
 	});

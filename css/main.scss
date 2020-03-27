@@ -267,7 +267,7 @@ header {
     display: flex;
     justify-content: center;
 
-    $mblMainCircleDim: 70vw; //~
+    $mblMainCircleDim: 70vw;
     
     img.circle {
         width: $mblMainCircleDim / 1.5;
@@ -341,17 +341,17 @@ $mblFeaturesCircleDim: 60vw;
 }
 
 .customTrackingImage {
-    margin-top: -54%;//-226px; //~
+    margin-top: -54%;
     margin-left: 33vw;
 }
 
 .customSystemsImage {
-    margin-top: -59%;//-290px;
+    margin-top: -59%;
     margin-left: 21vw;
 }
 
 .analyticsImage {
-    margin-top: -50%;//-255px;
+    margin-top: -50%;
     margin-left: 15vw;
 }
 
@@ -524,7 +524,7 @@ $mblFeaturesCircleDim: 60vw;
 
     .stackoverflow:hover {
         a { 
-            color: $translucentTeal; //~
+            color: $translucentTeal;
         }
     }
        
