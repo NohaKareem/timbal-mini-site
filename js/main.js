@@ -15,13 +15,7 @@
 
 	function smoothScroll(e) {
 		// e.preventDefault();
-		// console.log(e.currentTarget.getAttribute("href"))
-		// console.log(this)
-		// console.log(this.href)
-		// console.log(e.currentTarget)
-		console.log('smooth')
 		var href = e.target.dataset.url;
-		// console.log(href)
 		TweenLite.to(window, 13, { scrollTo: { y: "#" + href, offsetY: 10, autoKill: false } });
 	}
 
