@@ -275,6 +275,9 @@ header #mblNavMenu ul li {
 .featureText {
   line-height: 4vh;
 }
+.featureText h3 {
+  line-height: 5vh;
+}
 
 .customTrackingFeatureCon .featureImageCon {
   margin-top: -50px;
@@ -598,6 +601,9 @@ footer #signUpLink {
   .featureText p {
     font-size: 3vw;
     line-height: 8vh;
+  }
+  .featureText h3 {
+    line-height: 10vh;
   }
 
   .feature {

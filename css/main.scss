@@ -396,6 +396,10 @@ $mblFeaturesCircleDim: 60vw;
 
 .featureText {
     line-height: 4vh;
+    
+    h3 {
+        line-height: 5vh;
+    }
 }
 
 .customTrackingFeatureCon {
@@ -836,6 +840,11 @@ footer {
             font-size: 3vw;
             line-height: 8vh;
         }
+        
+        h3 {
+            line-height: 10vh;
+        }
+    
     }
     
     .feature {
