@@ -91,8 +91,8 @@ header #mblNavMenu {
   z-index: 3;
   width: 100vw;
   margin-left: -10px;
-  padding-top: 30px;
-  margin-top: -20px;
+  padding-top: 40px;
+  margin-top: -10%;
 }
 header #mblNavMenu ul li {
   text-align: center;

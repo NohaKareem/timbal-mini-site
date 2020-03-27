@@ -161,8 +161,8 @@ header {
         z-index: 3;
         width: 100vw;
         margin-left: -$baseMargin;
-        padding-top: $baseMargin * 3;
-        margin-top: - $baseMargin * 2;
+        padding-top: $baseMargin * 4;
+        margin-top: -10%;
     }
 }
 
@@ -591,7 +591,6 @@ footer {
 
     margin-bottom: $baseMargin;
 }
-
 
 // desktop
 @media screen and (min-width: $desktopWidth) {
