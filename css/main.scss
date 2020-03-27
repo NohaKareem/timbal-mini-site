@@ -784,9 +784,21 @@ footer {
         }
     }
 
+    #aboutMeGridCon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
     #aboutMeGrid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: 1fr 2fr;//repeat(2, minmax(0, 1fr));
         grid-template-rows: 1fr;
+
+        width: 80vw;
+        // margin-left: $baseMargin * 4;
+        margin-left: 4vw;
         
         #aboutMeTextCon {
             display: contents;
@@ -794,6 +806,12 @@ footer {
             flex-direction: column;
             justify-content: center;
             flex-wrap: wrap;
+
+            margin-left: 5vw;
+            font-size: 2vw;
+            width: 80%;
+
+            line-height: 3vw;
 
             span {
                 display: inline;
