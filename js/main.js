@@ -6,7 +6,6 @@
 	let navLinks = document.querySelectorAll('nav ul li a');
 	let mblNavBurger = document.querySelector('#mblNavBurger');
 	let mblNavMenu = document.querySelector('#mblNavMenu');
-	// console.log(emptyLinks)
 
 	// green sock smooth scroll effect for navigation links
 	navLinks.forEach(navLink => {
@@ -14,9 +13,11 @@
 	});
 
 	function smoothScroll(e) {
+		// console.log(e)
 		e.preventDefault();
 		var href = e.target.dataset.url;
-		TweenLite.to(window, 3, { scrollTo: { y: "#" + href, offsetY: 3, autoKill: false } });
+		// console.log('smoothScroll: ' + href) 
+		TweenLite.to(window, 3, { scrollTo: { y: "#" + href, offsetY: 5, autoKill: false }, ease: Power3.easeInOut });
 	}
 
 	// prevent default behavior for links
