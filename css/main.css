@@ -649,5 +649,24 @@ footer #signUpLink {
     margin-top: -55vh;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1534px) {
+  .customTrackingImage {
+    margin-top: -38vh;
+  }
+
+  .customSystemsImage {
+    margin-top: -56vh;
+  }
+
+  .analyticsCircle {
+    margin-top: 15vh;
+    margin-left: 20vw;
+  }
+
+  .analyticsFeature .analyticsImage {
+    margin-left: 12vw;
+    margin-top: -40vh;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

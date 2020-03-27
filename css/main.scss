@@ -583,6 +583,7 @@ footer {
     margin-bottom: $baseMargin;
 }
 
+
 // desktop
 @media screen and (min-width: $desktopWidth) {
     h1, .sectionHeading {
@@ -904,4 +905,29 @@ footer {
         }
     }
 
+}
+
+// small-desktop
+@media screen and (min-width: $desktopWidth) and (max-width: 1534px) {
+    .customTrackingImage {
+        margin-top: -38vh;
+        // margin-left: 23vw;
+    }
+
+    .customSystemsImage {
+        margin-top: -56vh;
+        // margin-left: 15vw;
+    }
+
+    .analyticsCircle {
+        margin-top: 15vh;
+        margin-left: 20vw;
+    }
+
+    .analyticsFeature {
+        .analyticsImage {
+            margin-left: 12vw;//-8.5vw;
+            margin-top: -40vh;
+        }
+    }
 }
