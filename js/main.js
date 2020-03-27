@@ -19,8 +19,10 @@
 		// console.log(this)
 		// console.log(this.href)
 		// console.log(e.currentTarget)
-		var href = e.currentTarget.dataset.url;
-		TweenLite.to(window, 1, { scrollTo: { y: "#" + href, offsetY: 3, autoKill: false } });
+		console.log('smooth')
+		var href = e.target.dataset.url;
+		// console.log(href)
+		TweenLite.to(window, 13, { scrollTo: { y: "#" + href, offsetY: 10, autoKill: false } });
 	}
 
 	// prevent default behavior for links

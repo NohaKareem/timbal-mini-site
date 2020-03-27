@@ -12,6 +12,7 @@ body {
 
 main {
   margin: auto 30px !important;
+  padding-top: 11vh;
 }
 
 p {
