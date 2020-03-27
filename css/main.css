@@ -108,7 +108,7 @@ header #mblNavMenu ul li {
 
 #heroText {
   margin: 30px auto;
-  line-height: 5vh;
+  line-height: 40px;
   margin-left: 30px;
   text-align: center;
 }
@@ -269,7 +269,7 @@ header #mblNavMenu ul li {
 
 .customTrackingFeatureCon .featureText p {
   padding-bottom: 50px;
-  line-height: 4vh;
+  line-height: 40px;
 }
 
 .systemsFeature .featureText h3 {
@@ -277,10 +277,10 @@ header #mblNavMenu ul li {
 }
 
 .featureText {
-  line-height: 4vh;
+  line-height: 40px;
 }
 .featureText h3 {
-  line-height: 5vh;
+  line-height: 40px;
 }
 
 .customTrackingFeatureCon .featureImageCon {
@@ -450,7 +450,7 @@ footer #signUpLink {
   }
   #heroText p {
     font-size: 2.925vw;
-    line-height: 5.175vw;
+    line-height: 40px;
   }
 
   .ctaButton {
@@ -588,7 +588,7 @@ footer #signUpLink {
     margin-left: 5vw;
     font-size: 2vw;
     width: 80%;
-    line-height: 3vw;
+    line-height: 40px;
   }
   #aboutMeGrid #aboutMeTextCon span {
     display: inline;
@@ -600,15 +600,15 @@ footer #signUpLink {
 
   .customTrackingFeatureCon .featureText p {
     padding-bottom: 50px;
-    line-height: 8vh;
+    line-height: 5vw !important;
   }
 
   .featureText p {
     font-size: 3vw;
-    line-height: 8vh;
+    line-height: 5vw !important;
   }
   .featureText h3 {
-    line-height: 10vh;
+    line-height: 6vw !important;
   }
 
   .feature {
@@ -702,6 +702,17 @@ footer #signUpLink {
   .analyticsFeature .analyticsImage {
     margin-top: -30%;
     margin-left: 12vw;
+  }
+
+  .customTrackingFeatureCon .featureText p {
+    line-height: 40px;
+  }
+
+  .featureText p {
+    line-height: 40px;
+  }
+  .featureText h3 {
+    line-height: 40px;
   }
 }
 

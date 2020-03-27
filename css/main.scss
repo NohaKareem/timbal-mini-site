@@ -5,6 +5,8 @@ $grayWhite: #F0F0F0;
 $baseMargin: 10px;
 $topMargin: $baseMargin * 0.5;
 
+$lineHeight: 40px;
+
 $bodyFontSize: 25px;
 $h3FontSize: 37px;
 $h1FontSize: 50px;
@@ -175,7 +177,7 @@ header {
 
 #heroText {
     margin: $baseMargin * 3 auto;
-    line-height: 5vh;
+    line-height: $lineHeight;//5vh;
     
     p { 
         margin-bottom: $baseMargin * 3.5;
@@ -385,7 +387,7 @@ $mblFeaturesCircleDim: 60vw;
     .featureText {
         p {
             padding-bottom: $baseMargin * 5;
-            line-height: 4vh;
+            line-height: $lineHeight;//4vh;
         }
     }
 }
@@ -399,10 +401,10 @@ $mblFeaturesCircleDim: 60vw;
 }
 
 .featureText {
-    line-height: 4vh;
+    line-height: $lineHeight;//4vh;
     
     h3 {
-        line-height: 5vh;
+        line-height: $lineHeight;//5vh;
     }
 }
 
@@ -635,7 +637,7 @@ footer {
 
         p {
             font-size: $desktopMainCircleFontSize * 0.65;
-            line-height: $desktopMainCircleFontSize * 1.15;
+            line-height: $lineHeight;//$desktopMainCircleFontSize * 1.15;
         }
     }
 
@@ -811,7 +813,7 @@ footer {
             font-size: 2vw;
             width: 80%;
 
-            line-height: 3vw;
+            line-height: $lineHeight;//3vw;
 
             span {
                 display: inline;
@@ -828,7 +830,7 @@ footer {
         .featureText {
             p {
                 padding-bottom: $baseMargin * 5;
-                line-height: 8vh;
+                line-height: 5vw !important;//$lineHeight * 2 !important;//8vh;
             }
         }
     }
@@ -836,13 +838,12 @@ footer {
     .featureText {
         p {
             font-size: 3vw;
-            line-height: 8vh;
+            line-height: 5vw !important;//$lineHeight * 2 !important;//8vh;
         }
         
         h3 {
-            line-height: 10vh;
+            line-height: 6vw !important;//$lineHeight * 2 !important;//10vh;
         }
-    
     }
     
     .feature {
@@ -951,6 +952,24 @@ footer {
         .analyticsImage {
             margin-top: -30%;
             margin-left: 12vw;
+        }
+    }
+
+    .customTrackingFeatureCon {
+        .featureText {
+            p {
+                line-height: $lineHeight;//8vh;
+            }
+        }
+    }
+
+    .featureText {
+        p {
+            line-height: $lineHeight;//8vh;
+        }
+        
+        h3 {
+            line-height: $lineHeight;//10vh;
         }
     }
 }
