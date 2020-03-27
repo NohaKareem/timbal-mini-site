@@ -813,7 +813,7 @@ footer {
             font-size: 2vw;
             width: 80%;
 
-            line-height: $lineHeight;//3vw;
+            line-height: $lineHeight;
 
             span {
                 display: inline;
@@ -830,7 +830,7 @@ footer {
         .featureText {
             p {
                 padding-bottom: $baseMargin * 5;
-                line-height: 5vw !important;//$lineHeight * 2 !important;//8vh;
+                line-height: 5vw !important;
             }
         }
     }
@@ -838,11 +838,11 @@ footer {
     .featureText {
         p {
             font-size: 3vw;
-            line-height: 5vw !important;//$lineHeight * 2 !important;//8vh;
+            line-height: 5vw !important;
         }
         
         h3 {
-            line-height: 6vw !important;//$lineHeight * 2 !important;//10vh;
+            line-height: 6vw !important;
         }
     }
     
@@ -958,18 +958,18 @@ footer {
     .customTrackingFeatureCon {
         .featureText {
             p {
-                line-height: $lineHeight;//8vh;
+                line-height: $lineHeight;
             }
         }
     }
 
     .featureText {
         p {
-            line-height: $lineHeight;//8vh;
+            line-height: $lineHeight;
         }
         
         h3 {
-            line-height: $lineHeight;//10vh;
+            line-height: $lineHeight;
         }
     }
 }
