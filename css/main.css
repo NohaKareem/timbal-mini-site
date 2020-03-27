@@ -76,8 +76,8 @@ header #mblNavBurger {
   margin-top: -30px;
 }
 header #logoImage {
-  height: 6vh;
-  padding-left: 50px;
+  height: 5vw;
+  padding-left: 5vw;
 }
 header #mblNavBurger.animate {
   -webkit-transform: rotate(90deg);
@@ -424,7 +424,7 @@ footer #signUpLink {
   }
   nav#desktopNav li a {
     color: #52BCB9;
-    font-size: 20px;
+    font-size: 3vw;
   }
   nav#desktopNav li a:hover {
     color: #707070;

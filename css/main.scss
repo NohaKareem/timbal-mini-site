@@ -103,7 +103,7 @@ header {
     nav#desktopNav {
         margin-top: - $topMargin * 6;
         display: none; // hide in mobile mode
-
+        
         a {
             text-decoration: none;
             color: $gray; 
@@ -133,10 +133,10 @@ header {
     }
 
     #logoImage {
-        height: 6vh;
+        height: 5vw;//6vh;
         // margin-left: 5vw;
-        padding-left: 50px;
         @extend %headerStyles;
+        padding-left: 5vw;
     }
 
     // css animation
@@ -601,13 +601,13 @@ footer {
         margin-bottom: $baseMargin * 3;
         font-size: 7vw;
     }
-    
+
     nav#desktopNav {
         display: block !important;
         li {
             a {
                 color: $teal;
-                font-size: 20px;
+                font-size: 3vw;//20px;
             }
             a:hover {
                 color: $gray;
