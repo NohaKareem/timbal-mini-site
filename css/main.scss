@@ -41,7 +41,6 @@ $translucentGray: rgba($gray, 0.14);
     -ms-transform: $transformation;
     transform: $transformation;
   }
-  
 
 .hidden {
 	display: none;
@@ -132,6 +131,7 @@ header {
 
     #logoImage {
         height: 6vh;
+        // margin-left: 5vw;
         @extend %headerStyles;
     }
 
@@ -175,6 +175,8 @@ header {
     p { 
         margin-bottom: $baseMargin * 3.5;
     }
+
+    margin-left: $baseMargin * 3;
 
     // mobile style
     text-align: center;
@@ -344,7 +346,7 @@ $mblFeaturesCircleDim: 300px;//50vw;//
 }
 
 .customTrackingImage {
-    margin-top: -226px;
+    margin-top: -54%;//-226px; //~
     margin-left: 33vw;
 }
 
@@ -829,7 +831,7 @@ footer {
     
     // custom tracking feature
     .customTrackingImage {
-        margin-top: -55vh;//-226px; //53vh
+        margin-top: -27%;//-55vh;//-226px; //53vh
         margin-left: 23vw;
     }
 
@@ -910,12 +912,12 @@ footer {
 // small-desktop
 @media screen and (min-width: $desktopWidth) and (max-width: 1534px) {
     .customTrackingImage {
-        margin-top: -38vh;
+        margin-top: -27%;//-38vh;
         // margin-left: 23vw;
     }
 
     .customSystemsImage {
-        margin-top: -56vh;
+        margin-top: -40%;//-56vh;
         // margin-left: 15vw;
     }
 
@@ -926,8 +928,8 @@ footer {
 
     .analyticsFeature {
         .analyticsImage {
+            margin-top: -30%;//-40vh;
             margin-left: 12vw;//-8.5vw;
-            margin-top: -40vh;
         }
     }
 }

@@ -104,6 +104,7 @@ header #mblNavMenu ul li {
 
 #heroText {
   margin: 30px auto;
+  margin-left: 30px;
   text-align: center;
 }
 #heroText p {
@@ -228,7 +229,7 @@ header #mblNavMenu ul li {
 }
 
 .customTrackingImage {
-  margin-top: -226px;
+  margin-top: -54%;
   margin-left: 33vw;
 }
 
@@ -587,7 +588,7 @@ footer #signUpLink {
   }
 
   .customTrackingImage {
-    margin-top: -55vh;
+    margin-top: -27%;
     margin-left: 23vw;
   }
 
@@ -651,11 +652,11 @@ footer #signUpLink {
 }
 @media screen and (min-width: 768px) and (max-width: 1534px) {
   .customTrackingImage {
-    margin-top: -38vh;
+    margin-top: -27%;
   }
 
   .customSystemsImage {
-    margin-top: -56vh;
+    margin-top: -40%;
   }
 
   .analyticsCircle {
@@ -664,8 +665,8 @@ footer #signUpLink {
   }
 
   .analyticsFeature .analyticsImage {
+    margin-top: -30%;
     margin-left: 12vw;
-    margin-top: -40vh;
   }
 }
 
