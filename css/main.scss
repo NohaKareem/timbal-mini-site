@@ -57,10 +57,14 @@ body {
     overflow-x: hidden;
 }
 
-main {
+%baseMarginSetup {
     margin: auto 30px !important;
-    padding-top: 11vh;
     padding-left: 0.15vw;
+}
+
+main {
+    @extend %baseMarginSetup;
+    padding-top: 11vh;
 }
 
 p {
@@ -589,6 +593,7 @@ footer {
     }
 
     margin-bottom: $baseMargin;
+    @extend %baseMarginSetup;
 }
 
 // desktop
@@ -912,7 +917,7 @@ footer {
         margin-left: 20vw;
         margin-top: 23vh;
     }
- 
+
     .analyticsFeature {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -932,7 +937,6 @@ footer {
             margin-top: -60vh;
         }
     }
-
 }
 
 // small-desktop

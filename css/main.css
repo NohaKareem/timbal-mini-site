@@ -10,10 +10,13 @@ body {
   overflow-x: hidden;
 }
 
-main {
+footer, main {
   margin: auto 30px !important;
-  padding-top: 11vh;
   padding-left: 0.15vw;
+}
+
+main {
+  padding-top: 11vh;
 }
 
 p {
