@@ -548,6 +548,9 @@ footer #signUpLink {
     height: 6.6666666667vw;
     margin-top: 13.8461538462vw;
     margin-left: -20vw;
+    -webkit-margin-left: -20vw;
+    -ms-margin-left: -20vw;
+    margin-left: -20vw;
     font-size: 5vw;
   }
   #aboutMeCircles .stackoverflow {
@@ -556,11 +559,17 @@ footer #signUpLink {
     font-size: 2.5vw;
     margin-top: 2vw;
     margin-left: -14vw;
+    -webkit-margin-left: -14vw;
+    -ms-margin-left: -14vw;
+    margin-left: -14vw;
   }
   #aboutMeCircles .twitter {
     width: 6.6666666667vw;
     height: 6.6666666667vw;
     margin-top: 2.8571428571vw;
+    margin-left: 16vw;
+    -webkit-margin-left: 16vw;
+    -ms-margin-left: 16vw;
     margin-left: 16vw;
     font-size: 5vw;
   }
@@ -569,6 +578,9 @@ footer #signUpLink {
     height: 2.5vw;
     font-size: 1.5vw;
     margin-top: 16vw;
+    margin-left: 26vw;
+    -webkit-margin-left: 26vw;
+    -ms-margin-left: 26vw;
     margin-left: 26vw;
   }
 

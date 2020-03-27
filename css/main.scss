@@ -44,6 +44,12 @@ $translucentGray: rgba($gray, 0.14);
     transform: $transformation;
   }
 
+  @mixin marginLeft($marginLeftVal) {
+    -webkit-margin-left: $marginLeftVal;
+    -ms-margin-left: $marginLeftVal;
+    margin-left: $marginLeftVal;
+  }
+
 .hidden {
 	display: none;
 }
@@ -765,6 +771,9 @@ footer {
             height: $desktopAboutMeCircleDim / 3;
             margin-top: $desktopAboutMeCircleDim - $desktopAboutMeCircleDim / 3.25;
             margin-left: -$desktopAboutMeCircleDim;
+
+            // chrome bug fix attempt
+            @include marginLeft(-$desktopAboutMeCircleDim);
             font-size: $largeFaFontSize;
         }
 
@@ -775,13 +784,15 @@ footer {
 
             margin-top: $desktopAboutMeCircleDim / 10;
             margin-left: -14vw;
+            @include marginLeft(-14vw);
         }
         
         .twitter {
             width: $desktopAboutMeCircleDim / 3;
             height: $desktopAboutMeCircleDim / 3;
             margin-top: $desktopAboutMeCircleDim / 7;
-            margin-left: 16vw;
+            margin-left: 16vw;//2em
+            @include marginLeft(16vw);
             font-size: $largeFaFontSize;
         }
 
@@ -790,7 +801,8 @@ footer {
             height: $desktopAboutMeCircleDim / 8;
             font-size: $smallFaFontSize;
             margin-top: $desktopAboutMeCircleDim / 1.25;
-            margin-left: 26vw;
+            margin-left: 26vw;//10em
+            @include marginLeft(26vw);
         }
     }
 
