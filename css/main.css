@@ -203,8 +203,8 @@ header #mblNavMenu ul li {
 }
 
 .analyticsCircle, .customSystemsCircle, .customTrackingCircle {
-  width: 300px;
-  height: 300px;
+  width: 60vw;
+  height: 60vw;
 }
 
 .customTrackingCircle {
@@ -234,12 +234,12 @@ header #mblNavMenu ul li {
 }
 
 .customSystemsImage {
-  margin-top: -290px;
+  margin-top: -59%;
   margin-left: 21vw;
 }
 
 .analyticsImage {
-  margin-top: -255px;
+  margin-top: -50%;
   margin-left: 15vw;
 }
 

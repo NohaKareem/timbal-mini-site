@@ -275,8 +275,6 @@ header {
         margin-top: $baseMargin * 4;
         margin-bottom: $baseMargin * 4;
     }
-
-    // padding-bottom: 1px;
 }
 
 #aboutMeText {
@@ -294,13 +292,9 @@ header {
     padding: $baseMargin;
     padding-left: $baseMargin * 3;
     padding-right: $baseMargin * 3;
-    // font-size: $baseMargin;//~
     font-size: $bodyFontSize;//20px
 
     text-decoration: none;
-    // color: white;
-
-    // @include gradient(90deg, $gradientTeal1 0%, $gradientTeal2);
 
     margin: $baseMargin * 4 auto;
     margin-top: $baseMargin * -4;
@@ -316,7 +310,7 @@ header {
 }
 
 // features section 
-$mblFeaturesCircleDim: 300px;//50vw;//
+$mblFeaturesCircleDim: 60vw;//300px;//50vw;//
 
 %featuresCircles {
     width: $mblFeaturesCircleDim; 
@@ -351,12 +345,12 @@ $mblFeaturesCircleDim: 300px;//50vw;//
 }
 
 .customSystemsImage {
-    margin-top: -290px;
+    margin-top: -59%;//-290px;
     margin-left: 21vw;
 }
 
 .analyticsImage {
-    margin-top: -255px;
+    margin-top: -50%;//-255px;
     margin-left: 15vw;
 }
 
