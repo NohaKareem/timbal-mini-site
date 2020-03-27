@@ -104,6 +104,7 @@ header #mblNavMenu ul li {
 
 #heroText {
   margin: 30px auto;
+  line-height: 5vh;
   margin-left: 30px;
   text-align: center;
 }
@@ -264,10 +265,15 @@ header #mblNavMenu ul li {
 
 .customTrackingFeatureCon .featureText p {
   padding-bottom: 50px;
+  line-height: 4vh;
 }
 
 .systemsFeature .featureText h3 {
   padding-top: 45px;
+}
+
+.featureText {
+  line-height: 4vh;
 }
 
 .customTrackingFeatureCon .featureImageCon {
@@ -436,6 +442,7 @@ footer #signUpLink {
   }
   #heroText p {
     font-size: 2.925vw;
+    line-height: 5.175vw;
   }
 
   .ctaButton {
@@ -511,10 +518,6 @@ footer #signUpLink {
     padding-left: 11.5px;
   }
 
-  .customTrackingFeatureCon .featureText p {
-    padding-bottom: 50px;
-  }
-
   #aboutMeCircles img.circle {
     width: 20vw;
     height: 20vw;
@@ -587,8 +590,14 @@ footer #signUpLink {
     margin-left: 30px;
   }
 
+  .customTrackingFeatureCon .featureText p {
+    padding-bottom: 50px;
+    line-height: 8vh;
+  }
+
   .featureText p {
     font-size: 3vw;
+    line-height: 8vh;
   }
 
   .feature {
@@ -645,6 +654,7 @@ footer #signUpLink {
 
   .analyticsCircle {
     margin-left: 20vw;
+    margin-top: 23vh;
   }
 
   .analyticsFeature {
@@ -661,7 +671,7 @@ footer #signUpLink {
   }
   .analyticsFeature .analyticsImage {
     margin-left: 12vw;
-    margin-top: -55vh;
+    margin-top: -60vh;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1534px) {
@@ -674,7 +684,7 @@ footer #signUpLink {
   }
 
   .analyticsCircle {
-    margin-top: 15vh;
+    margin-top: 26vh;
     margin-left: 20vw;
   }
 

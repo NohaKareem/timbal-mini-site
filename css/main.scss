@@ -171,6 +171,7 @@ header {
 
 #heroText {
     margin: $baseMargin * 3 auto;
+    line-height: 5vh;
     
     p { 
         margin-bottom: $baseMargin * 3.5;
@@ -310,7 +311,7 @@ header {
 }
 
 // features section 
-$mblFeaturesCircleDim: 60vw;//300px;//50vw;//
+$mblFeaturesCircleDim: 60vw;
 
 %featuresCircles {
     width: $mblFeaturesCircleDim; 
@@ -380,6 +381,7 @@ $mblFeaturesCircleDim: 60vw;//300px;//50vw;//
     .featureText {
         p {
             padding-bottom: $baseMargin * 5;
+            line-height: 4vh;
         }
     }
 }
@@ -390,6 +392,10 @@ $mblFeaturesCircleDim: 60vw;//300px;//50vw;//
             padding-top: $baseMargin * 4.5;
         }
     }
+}
+
+.featureText {
+    line-height: 4vh;
 }
 
 .customTrackingFeatureCon {
@@ -622,7 +628,8 @@ footer {
         margin-top: $baseMargin * 6;
 
         p {
-            font-size: $desktopMainCircleFontSize * 0.65;//50px;//27px;7.25vh;//~~~
+            font-size: $desktopMainCircleFontSize * 0.65;
+            line-height: $desktopMainCircleFontSize * 1.15;
         }
     }
 
@@ -633,7 +640,7 @@ footer {
     }
 
     // hero section - circles
-    $desktopMainCircleDim: 40vw;//600px;//40vw; //40vw
+    $desktopMainCircleDim: 40vw;
     
     #heroCircles {
         margin-left: $baseMargin * 3;
@@ -721,15 +728,6 @@ footer {
     // about me
     // $mblMainCircleDim: 70vw;
     $desktopAboutMeCircleDim: 20vw;//500px; //60vw;
-
-    .customTrackingFeatureCon {
-        .featureText {
-            p {
-                padding-bottom: $baseMargin * 5;
-                // width: 35vw;
-            }
-        }
-    }
 
     #aboutMeCircles {
         $largeFaFontSize: 5vw;
@@ -824,10 +822,19 @@ footer {
         margin-left: $baseMargin * 3;
     }
 
+    .customTrackingFeatureCon {
+        .featureText {
+            p {
+                padding-bottom: $baseMargin * 5;
+                line-height: 8vh;
+            }
+        }
+    }
+
     .featureText {
         p {
-            // font-size: $desktopMainCircleFontSize * 0.45;
             font-size: 3vw;
+            line-height: 8vh;
         }
     }
     
@@ -843,21 +850,18 @@ footer {
     
     // custom tracking feature
     .customTrackingImage {
-        margin-top: -27%;//-55vh;//-226px; //53vh
+        margin-top: -27%;
         margin-left: 23vw;
     }
 
     .customTrackingCircle {
         @extend %featuresCircles;
-        margin-top: 16vh; // 9vh
+        margin-top: 16vh; 
         margin-left: 13.5vw;
     }
     
     // custom systems feature
     .systemsFeature {
-        // display: grid;
-        // grid-template-columns: repeat(2, minmax(0, 1fr));
-
         display: flex;
         flex-direction: row;
 
@@ -897,6 +901,7 @@ footer {
     .analyticsCircle {
         @extend %featuresCircles;
         margin-left: 20vw;
+        margin-top: 23vh;
     }
  
     .analyticsFeature {
@@ -914,8 +919,8 @@ footer {
         }
 
         .analyticsImage {
-            margin-left: 12vw;//-8.5vw;
-            margin-top: -55vh;
+            margin-left: 12vw;
+            margin-top: -60vh;
         }
     }
 
@@ -934,14 +939,14 @@ footer {
     }
 
     .analyticsCircle {
-        margin-top: 15vh;
+        margin-top: 26vh;
         margin-left: 20vw;
     }
 
     .analyticsFeature {
         .analyticsImage {
-            margin-top: -30%;//-40vh;
-            margin-left: 12vw;//-8.5vw;
+            margin-top: -30%;
+            margin-left: 12vw;
         }
     }
 }
