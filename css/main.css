@@ -13,6 +13,7 @@ body {
 main {
   margin: auto 30px !important;
   padding-top: 11vh;
+  padding-left: 5vw;
 }
 
 p {
@@ -28,6 +29,7 @@ h1, h3, .sectionHeading {
 h1, .sectionHeading {
   text-align: center;
   font-size: 50px;
+  font-weight: bold;
 }
 
 h3 {
@@ -75,6 +77,7 @@ header #mblNavBurger {
 }
 header #logoImage {
   height: 6vh;
+  padding-left: 50px;
 }
 header #mblNavBurger.animate {
   -webkit-transform: rotate(90deg);
