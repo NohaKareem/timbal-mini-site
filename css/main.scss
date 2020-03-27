@@ -135,8 +135,7 @@ header {
     }
 
     #logoImage {
-        height: 5vw;//6vh;
-        // margin-left: 5vw;
+        height: 7vw;
         @extend %headerStyles;
         padding-left: 5vw;
     }
@@ -594,6 +593,10 @@ footer {
 
 // desktop
 @media screen and (min-width: $desktopWidth) {
+    #logoImage {
+        height: 5vw !important;
+    }
+
     h1, .sectionHeading {
         margin-top: $baseMargin * 6;
         margin-bottom: $baseMargin * 3;

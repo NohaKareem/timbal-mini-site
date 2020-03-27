@@ -76,7 +76,7 @@ header #mblNavBurger {
   margin-top: -30px;
 }
 header #logoImage {
-  height: 5vw;
+  height: 7vw;
   padding-left: 5vw;
 }
 header #mblNavBurger.animate {
@@ -412,6 +412,10 @@ footer #signUpLink {
 }
 
 @media screen and (min-width: 768px) {
+  #logoImage {
+    height: 5vw !important;
+  }
+
   h1, .sectionHeading {
     margin-top: 60px;
     margin-bottom: 30px;
