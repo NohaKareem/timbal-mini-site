@@ -14,9 +14,9 @@
 	});
 
 	function smoothScroll(e) {
-		// e.preventDefault();
+		e.preventDefault();
 		var href = e.target.dataset.url;
-		TweenLite.to(window, 13, { scrollTo: { y: "#" + href, offsetY: 10, autoKill: false } });
+		TweenLite.to(window, 3, { scrollTo: { y: "#" + href, offsetY: 3, autoKill: false } });
 	}
 
 	// prevent default behavior for links
