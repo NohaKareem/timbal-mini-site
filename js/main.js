@@ -9,7 +9,7 @@
 
 	// green sock smooth scroll effect for navigation links
 	navLinks.forEach(navLink => {
-		addEventListener("click", smoothScroll);
+		navLink.addEventListener("click", smoothScroll);
 	});
 
 	function smoothScroll(e) {
