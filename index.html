@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, width=device-width"> 
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>Timbal</title>
 
     <!-- fonts -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap" rel="stylesheet">
 
     <!-- styles -->
     <link href="css/reset.css" rel="stylesheet" type="text/css">
@@ -17,7 +19,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/TextPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/ScrollToPlugin.min.js"></script>
 </head>
 
@@ -51,25 +53,29 @@
     </header>
     <main class="container">
         <h1 class="hidden">Timbal landing page</h1>
-        <section id="heroCon">
-            <h2 class="hidden">Hero Section</h2>
-            <div id="heroCircles">
-                <div class="circle mainCircle">
-                    <p>Meet timbal, a customized time-logging& personal research platform.</p>
+        <div class="heroConCon">
+            <section id="heroCon">
+                <h2 class="hidden">Hero Section</h2>
+                <div id="heroCircles">
+                    <div class="circle mainCircle">
+                        <p>Meet timbal, a customized time-logging& personal research platform.</p>
+                    </div>
+                    <div class="circle overlay topRight"></div>
+                    <div class="circle overlay bottomLeft"></div>
+                    <div class="circle overlay backLayer"></div>
+                    <div class="circle overlay small topLeft"></div>
+                    <div class="circle overlay small bottomRight"></div>
+                    <div class="circle overlay small middleRight"></div>
                 </div>
-                <div class="circle overlay topRight"></div>
-                <div class="circle overlay bottomLeft"></div>
-                <div class="circle overlay backLayer"></div>
-                <div class="circle overlay small topLeft"></div>
-                <div class="circle overlay small bottomRight"></div>
-                <div class="circle overlay small middleRight"></div>
-            </div>
-            <div id="heroText">
-                <p> Gain impactful insights. Cultivate efficient and effective habits. Live your best life. </p>
-                <!-- link to sign up form in new tab -->
-                <div><a class="ctaButton" href="https://forms.gle/YU9vv9zMp49yt2cWA" target="_blank">Join now!</a></div>
-            </div>
-        </section>
+                <div id="heroText">
+                    <p> Gain impactful insights. Cultivate efficient and effective habits. Live your best life. </p>
+                    <!-- link to sign up form in new tab -->
+                    <div><a class="ctaButton" href="https://forms.gle/YU9vv9zMp49yt2cWA" target="_blank"
+                            rel="noopener noreferrer">Join now!</a>
+                    </div>
+                </div>
+            </section>
+        </div>
         <section id="featuresCon">
             <h2 class="hidden">Features</h2>
             <h2 class="sectionHeading">Sounds Familiar?</h2>
@@ -77,7 +83,8 @@
                 <h2 class="hidden">Time tracking with custom variables</h2>
                 <div class="featureText leftFeatureText">
                     <h3>I have no time to <span id="customVarsAnimatedText">read.</span></h3>
-                    <p>We all have the time, timbal helps you find it. With timbal you track what you want, as much or as little as you want with your own custom variables and timbal's code language system.</p>
+                    <p>We all have the time, timbal helps you find it. With timbal you track what you want, as much or
+                        as little as you want with your own custom variables and timbal's code language system.</p>
                 </div>
                 <div class="featureImageCon">
                     <div class="circle customTrackingCircle"></div>
@@ -93,12 +100,13 @@
                             alt="Custom tracking feature mobile image">
                     </picture>
                 </div>
-           </section>
-           <section class="feature systemsFeature">
+            </section>
+            <section class="feature systemsFeature">
                 <h2 class="hidden">Custom systems</h2>
                 <div class="featureText">
                     <h3>How much of my time am I actually<span id="systemsAnimatedText"> productive?</span></h3>
-                    <p>Good question! With timbal's custom-built systems, you can track just that by defining what is productive to you, what's creative, or anything else you wish to observe!</p>
+                    <p>Good question! With timbal's custom-built systems, you can track just that by defining what is
+                        productive to you, what's creative, or anything else you wish to observe!</p>
                 </div>
                 <div class="featureImageCon customSystems">
                     <div class="circle customSystemsCircle"></div>
@@ -121,8 +129,11 @@
                 <h2 class="hidden">Analytics</h2>
                 <div class="feature analyticsFeatureCon featureText leftFeatureText">
                     <h3>Where did the time go?</h3>
-                    <p>Timbal delivers insightful analytics visualized beautifully, for a quick glance and easier pattern-finding.</p>
-                    <a class="ctaButton ctaButtonSmall" href="https://forms.gle/YU9vv9zMp49yt2cWA" target="_blank">Join now!</a>
+                    <p>Timbal delivers insightful analytics visualized beautifully, for a quick glance and easier
+                        pattern-finding.</p>
+                    <a class="ctaButton ctaButtonSmall" href="https://forms.gle/YU9vv9zMp49yt2cWA" target="_blank"
+                        rel="noopener noreferrer">Join
+                        now!</a>
                 </div>
                 <div class="featureImageCon">
                     <div class="circle analyticsCircle"></div>
@@ -158,27 +169,35 @@
                 <div id="aboutMeGrid">
                     <div id="aboutMeCirclesCon">
                         <div id="aboutMeCircles">
-                            <img class="circle"
-                                src="assets/images/aboutPic.jpeg" alt="about me picture">
-                            <div class="circle overlay github">  
-                                <a href="https://github.com/NohaKareem"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <img class="circle" src="assets/images/aboutPic.jpeg" alt="about me picture">
+                            <div class="circle overlay github">
+                                <a href="https://github.com/NohaKareem"><i class="fa fa-github"
+                                        aria-hidden="true"></i></a>
                             </div>
                             <div class="circle overlay stackoverflow">
-                                <a href="https://stackoverflow.com/users/1446598/noha-kareem"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                                <a href="https://stackoverflow.com/users/1446598/noha-kareem"><i
+                                        class="fa fa-stack-overflow" aria-hidden="true"></i></a>
                             </div>
                             <div class="circle overlay twitter">
-                                <a href="https://twitter.com/nohakkareem"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="https://twitter.com/nohakkareem"><i class="fa fa-twitter"
+                                        aria-hidden="true"></i></a>
                             </div>
                             <div class="circle overlay medium">
-                                <a href="https://medium.com/@nohakkareem"><i class="fa fa-medium" aria-hidden="true"></i></a>
+                                <a href="https://medium.com/@nohakkareem"><i class="fa fa-medium"
+                                        aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
-                   <div id="aboutMeTextCon">
+                    <div id="aboutMeTextCon">
                         <p id="aboutMeText">
-                            Hello, I'm Noha Kareem. I'm an IMS student and computer science graduate who loves data, learning and building thoughtful and impactful projects. I started timbal through a spreadsheet over five years ago and am still fascinated by time-tracking today! If you're interested in timbal, feel free to <a href="mailto:noha.k.kareem@gmail.com?Subject=Hello">contact me</a> or <a href="https://forms.gle/YU9vv9zMp49yt2cWA">sign-up</a> to learn more!
+                            Hello, I'm Noha Kareem. I'm an IMS student and computer science graduate who loves data,
+                            learning and building thoughtful and impactful projects. I started timbal through a
+                            spreadsheet over five years ago and am still fascinated by time-tracking today! If you're
+                            interested in timbal, feel free to <a
+                                href="mailto:noha.k.kareem@gmail.com?Subject=Hello">contact me</a> or <a
+                                href="https://forms.gle/YU9vv9zMp49yt2cWA">sign-up</a> to learn more!
                         </p>
-                   </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -189,4 +208,5 @@
     </footer>
     <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -57,10 +57,9 @@ $translucentGray: rgba($gray, 0.14);
 body {
     font-family: 'Quattrocento Sans', sans-serif;
     color: $gray;
-    font-size: $bodyFontSize;
     background-color: $grayWhite;
 
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 %baseMarginSetup {
@@ -80,7 +79,8 @@ p {
 
 h1, h3, .sectionHeading { 
     color: $teal;
-    margin-top: $baseMargin * 4;
+    margin-top: $baseMargin * 6;
+    margin-bottom: $baseMargin * 4;
 }
 
 h1, .sectionHeading {
@@ -101,7 +101,7 @@ h3 {
 // nav
 header {
     margin: $baseMargin * 2;
-    
+    margin-top: $baseMargin * 3;
     nav {
         a {
             color: $teal;
@@ -113,12 +113,13 @@ header {
     }
 
     nav#desktopNav {
-        margin-top: - $topMargin * 6;
+        // margin-top: - $topMargin * 6;
+        margin-top: $baseMargin * -3 !important;
         display: none; // hide in mobile mode
-        
         a {
             text-decoration: none;
-            color: $gray; 
+            color: $gray;
+            font-size: $baseMargin * 2 !important;
         }
         ul {
             li {
@@ -186,17 +187,27 @@ header {
 
 #heroText {
     margin: $baseMargin * 3 auto;
-    line-height: $lineHeight;//5vh;
-    
-    p { 
+    line-height: $lineHeight;
+    font-size: $bodyFontSize;
+
+    p {
         margin-bottom: $baseMargin * 3.5;
     }
-
-    margin-left: $baseMargin * 3;
 
     // mobile style
     text-align: center;
 }
+
+.heroConCon {
+    height: 80vh;
+    display: grid;
+    place-items: center;
+    transform: scale(0.87);
+    margin-top: $baseMargin * -2;
+    margin-bottom: $baseMargin * 7;
+    // margin-top: -20%;
+}
+
 
 // hero section - circlesdesktopNav
 #heroCircles {
@@ -274,7 +285,13 @@ header {
         // mobile styles
         width: $mblMainCircleDim;    
         height: $mblMainCircleDim;
-        font-size: $mainCricleFontSize;
+        font-size: $mainCricleFontSize * 0.8;
+        line-height: $mainCricleFontSize;
+
+        p {
+            margin-left: $baseMargin * 2;
+            width: $mblMainCircleDim * 0.9;
+        }
     }
 }
 
@@ -294,6 +311,9 @@ header {
 }
 
 #aboutMeText {
+    line-height: $bodyFontSize * 1.5;
+    width: 80%;
+    margin: 0 auto;
     a {
         color: $teal;
         text-decoration: $teal;
@@ -386,7 +406,6 @@ $mblFeaturesCircleDim: 60vw;
             order: 6;
         }
     }
-
     .featureImageCon {
         margin-top: - $baseMargin * 5;
     }
@@ -396,9 +415,14 @@ $mblFeaturesCircleDim: 60vw;
     .featureText {
         p {
             padding-bottom: $baseMargin * 5;
-            line-height: $lineHeight;//4vh;
+            line-height: $lineHeight;
         }
     }
+}
+
+.featureText {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .systemsFeature {
@@ -407,6 +431,10 @@ $mblFeaturesCircleDim: 60vw;
             padding-top: $baseMargin * 4.5;
         }
     }
+}
+
+.customSystems {
+    margin-left: 8%;
 }
 
 .featureText {
@@ -470,17 +498,13 @@ $mblFeaturesCircleDim: 60vw;
     }
         
     .vue.adjustHeight {
-        // width: 130px;
-        // height: auto;
         padding-left: $baseMargin * 2.5;
-        // padding-right: $baseMargin * 1.5;
     }
 
     .gulp.adjustHeight {
         width: 130px;
         height: auto;
         padding-left: $baseMargin * 1.15;
-        // padding-right: $baseMargin * 1.5;
     }
 }
 
@@ -598,20 +622,21 @@ footer {
         margin-left: auto;
     }
 
-    margin-bottom: $baseMargin;
+    padding-bottom: $baseMargin * 1.5;
     @extend %baseMarginSetup;
 }
 
 // desktop
 @media screen and (min-width: $desktopWidth) {
     #logoImage {
-        height: 5vw !important;
+        height: 3vw !important;
+        margin-left: -2.5vw;
     }
 
     h1, .sectionHeading {
         margin-top: $baseMargin * 6;
-        margin-bottom: $baseMargin * 3;
-        font-size: 7vw;
+        font-size: 4.5vw;
+        margin-bottom: $baseMargin * 7;
     }
 
     nav#desktopNav {
@@ -649,14 +674,14 @@ footer {
         margin-top: $baseMargin * 6;
 
         p {
-            font-size: $desktopMainCircleFontSize * 0.65;
+            font-size: $desktopMainCircleFontSize * 0.6;
             line-height: $desktopMainCircleFontSize * 1.15;
         }
     }
 
     .ctaButton {
         margin-top: $baseMargin * 0.2;
-        font-size: $desktopMainCircleFontSize * 0.65;
+        font-size: $desktopMainCircleFontSize * 0.6 !important;
         align-self: flex-start;
     }
 
@@ -710,10 +735,12 @@ footer {
             padding-left: $baseMargin * 3;
             width: $desktopMainCircleDim;    
             height: $desktopMainCircleDim; 
-            font-size: $desktopMainCircleFontSize;
+            font-size: $desktopMainCircleFontSize * 0.7;
+            line-height: $desktopMainCircleFontSize;
 
             p {
-                margin-left: $baseMargin * 2;
+                margin-left: $baseMargin * 3;
+                width: $desktopMainCircleDim * 0.8;
             }
         }
     }
@@ -791,7 +818,7 @@ footer {
             width: $desktopAboutMeCircleDim / 3;
             height: $desktopAboutMeCircleDim / 3;
             margin-top: $desktopAboutMeCircleDim / 7;
-            margin-left: 16vw;//2em
+            margin-left: 16vw;
             @include marginLeft(16vw);
             font-size: $largeFaFontSize;
         }
@@ -801,7 +828,7 @@ footer {
             height: $desktopAboutMeCircleDim / 8;
             font-size: $smallFaFontSize;
             margin-top: $desktopAboutMeCircleDim / 1.25;
-            margin-left: 26vw;//10em
+            margin-left: 26vw;
             @include marginLeft(26vw);
         }
     }
@@ -822,18 +849,13 @@ footer {
         margin-left: 4vw;
         
         #aboutMeTextCon {
-            display: contents;
             display: flex;
             flex-direction: column;
             justify-content: center;
             flex-wrap: wrap;
+            font-size: $desktopMainCircleFontSize * 0.4;
 
             margin-left: 5vw;
-            font-size: 2vw;
-            width: 80%;
-
-            line-height: $lineHeight;
-
             span {
                 display: inline;
             }
@@ -849,15 +871,14 @@ footer {
         .featureText {
             p {
                 padding-bottom: $baseMargin * 5;
-                line-height: 5vw !important;
             }
         }
     }
 
     .featureText {
         p {
-            font-size: 3vw;
-            line-height: 5vw !important;
+            font-size: $desktopMainCircleFontSize * 0.4;
+            line-height: $desktopMainCircleFontSize !important;
         }
         
         h3 {
@@ -899,6 +920,7 @@ footer {
     
         .customSystems {
             order: 1;
+            margin-left: 0;
         }
     }
 
@@ -908,7 +930,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         h3 {
-            font-size: 5vw;
+            font-size: 3vw;
         }
     }
 
@@ -939,9 +961,13 @@ footer {
     
             .ctaButtonSmall {
                 order: 6;
-                margin-top: - $baseMargin;
-                font-size: 3vw;
+                margin-top: - $baseMargin * 1.5 !important;
+                font-size: $desktopMainCircleFontSize * 0.4 !important;
             }
+        }
+
+        .featureText {
+            margin-top: $baseMargin * 19;
         }
 
         .analyticsImage {
@@ -949,6 +975,7 @@ footer {
             margin-top: -60vh;
         }
     }
+        
 }
 
 // small-desktop
@@ -990,4 +1017,17 @@ footer {
             line-height: $lineHeight;
         }
     }
+}
+
+// mobile rule
+@media screen and (max-width: $desktopWidth) {
+.feature.analyticsFeatureCon.featureText.leftFeatureText {
+    h3, p {
+        margin: 0 auto;
+        width: 80%;
+    }
+    h3 {
+        margin-bottom: $baseMargin * 4;
+    }
+}
 }

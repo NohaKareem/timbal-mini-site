@@ -5,9 +5,8 @@
 body {
   font-family: "Quattrocento Sans", sans-serif;
   color: #707070;
-  font-size: 25px;
   background-color: #F0F0F0;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 footer, main {
@@ -26,7 +25,8 @@ p {
 
 h1, h3, .sectionHeading {
   color: #52BCB9;
-  margin-top: 40px;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 h1, .sectionHeading {
@@ -46,6 +46,7 @@ h3 {
 
 header {
   margin: 20px;
+  margin-top: 30px;
 }
 header nav a {
   color: #52BCB9;
@@ -55,12 +56,13 @@ header nav a:hover {
   color: #707070;
 }
 header nav#desktopNav {
-  margin-top: -30px;
+  margin-top: -30px !important;
   display: none;
 }
 header nav#desktopNav a {
   text-decoration: none;
   color: #707070;
+  font-size: 20px !important;
 }
 header nav#desktopNav ul li {
   display: inline;
@@ -112,11 +114,20 @@ header #mblNavMenu ul li {
 #heroText {
   margin: 30px auto;
   line-height: 40px;
-  margin-left: 30px;
+  font-size: 25px;
   text-align: center;
 }
 #heroText p {
   margin-bottom: 35px;
+}
+
+.heroConCon {
+  height: 80vh;
+  display: grid;
+  place-items: center;
+  transform: scale(0.87);
+  margin-top: -20px;
+  margin-bottom: 70px;
 }
 
 #heroCircles .overlay {
@@ -168,7 +179,12 @@ header #mblNavMenu ul li {
   color: white;
   width: 70vw;
   height: 70vw;
-  font-size: 8vw;
+  font-size: 6.4vw;
+  line-height: 8vw;
+}
+#heroCircles .mainCircle p {
+  margin-left: 20px;
+  width: 63vw;
 }
 
 #aboutMeCircles {
@@ -183,6 +199,11 @@ header #mblNavMenu ul li {
   margin-bottom: 40px;
 }
 
+#aboutMeText {
+  line-height: 37.5px;
+  width: 80%;
+  margin: 0 auto;
+}
 #aboutMeText a {
   color: #52BCB9;
   text-decoration: #52BCB9;
@@ -275,8 +296,17 @@ header #mblNavMenu ul li {
   line-height: 40px;
 }
 
+.featureText {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .systemsFeature .featureText h3 {
   padding-top: 45px;
+}
+
+.customSystems {
+  margin-left: 8%;
 }
 
 .featureText {
@@ -401,7 +431,7 @@ footer {
   font-size: 15px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-bottom: 10px;
+  padding-bottom: 15px;
 }
 footer a {
   text-decoration: none;
@@ -416,13 +446,14 @@ footer #signUpLink {
 
 @media screen and (min-width: 768px) {
   #logoImage {
-    height: 5vw !important;
+    height: 3vw !important;
+    margin-left: -2.5vw;
   }
 
   h1, .sectionHeading {
     margin-top: 60px;
-    margin-bottom: 30px;
-    font-size: 7vw;
+    font-size: 4.5vw;
+    margin-bottom: 70px;
   }
 
   nav#desktopNav {
@@ -456,13 +487,13 @@ footer #signUpLink {
     margin-top: 60px;
   }
   #heroText p {
-    font-size: 2.925vw;
+    font-size: 2.7vw;
     line-height: 5.175vw;
   }
 
   .ctaButton {
     margin-top: 2px;
-    font-size: 2.925vw;
+    font-size: 2.7vw !important;
     align-self: flex-start;
   }
 
@@ -506,10 +537,12 @@ footer #signUpLink {
     padding-left: 30px;
     width: 40vw;
     height: 40vw;
-    font-size: 4.5vw;
+    font-size: 3.15vw;
+    line-height: 4.5vw;
   }
   #heroCircles .mainCircle p {
-    margin-left: 20px;
+    margin-left: 30px;
+    width: 32vw;
   }
 
   #techStackGrid img {
@@ -599,15 +632,12 @@ footer #signUpLink {
     margin-left: 4vw;
   }
   #aboutMeGrid #aboutMeTextCon {
-    display: contents;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    font-size: 1.8vw;
     margin-left: 5vw;
-    font-size: 2vw;
-    width: 80%;
-    line-height: 40px;
   }
   #aboutMeGrid #aboutMeTextCon span {
     display: inline;
@@ -619,12 +649,11 @@ footer #signUpLink {
 
   .customTrackingFeatureCon .featureText p {
     padding-bottom: 50px;
-    line-height: 5vw !important;
   }
 
   .featureText p {
-    font-size: 3vw;
-    line-height: 5vw !important;
+    font-size: 1.8vw;
+    line-height: 4.5vw !important;
   }
   .featureText h3 {
     line-height: 6vw !important;
@@ -660,6 +689,7 @@ footer #signUpLink {
   }
   .systemsFeature .customSystems {
     order: 1;
+    margin-left: 0;
   }
 
   .featureText {
@@ -669,7 +699,7 @@ footer #signUpLink {
     justify-content: center;
   }
   .featureText h3 {
-    font-size: 5vw;
+    font-size: 3vw;
   }
 
   .customSystemsCircle {
@@ -696,8 +726,11 @@ footer #signUpLink {
   }
   .analyticsFeature .feature .ctaButtonSmall {
     order: 6;
-    margin-top: -10px;
-    font-size: 3vw;
+    margin-top: -15px !important;
+    font-size: 1.8vw !important;
+  }
+  .analyticsFeature .featureText {
+    margin-top: 190px;
   }
   .analyticsFeature .analyticsImage {
     margin-left: 12vw;
@@ -732,6 +765,15 @@ footer #signUpLink {
   }
   .featureText h3 {
     line-height: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .feature.analyticsFeatureCon.featureText.leftFeatureText h3, .feature.analyticsFeatureCon.featureText.leftFeatureText p {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .feature.analyticsFeatureCon.featureText.leftFeatureText h3 {
+    margin-bottom: 40px;
   }
 }
 
