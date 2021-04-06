@@ -62,7 +62,7 @@ header nav#desktopNav {
 header nav#desktopNav a {
   text-decoration: none;
   color: #707070;
-  font-size: 20px !important;
+  font-size: 26.5px !important;
 }
 header nav#desktopNav ul li {
   display: inline;
@@ -200,7 +200,7 @@ header #mblNavMenu ul li {
 }
 
 #aboutMeText {
-  line-height: 37.5px;
+  line-height: 56.25px;
   width: 80%;
   margin: 0 auto;
 }
@@ -428,7 +428,8 @@ header #mblNavMenu ul li {
 }
 
 footer {
-  font-size: 15px;
+  margin-top: 35px !important;
+  font-size: 19px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   padding-bottom: 15px;
